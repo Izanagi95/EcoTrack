@@ -1,0 +1,1922 @@
+[
+  {
+    "type": "Talk",
+    "title": "Crisi climatica e ambientale: indietro tutta? (Luca Mercalli)",
+    "date": "2026-03-19T16:30:00",
+    "city": "Genova",
+    "location": "Genova Blue District",
+    "organizer": "Blue District"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Toano (RE)",
+    "date": "2026-03-21T08:00:00",
+    "city": "Toano (RE)",
+    "location": "Cavola Forum",
+    "organizer": "DANIELE MANINI"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Gela (CL)",
+    "date": "2026-03-21T08:30:00",
+    "city": "Gela (CL)",
+    "location": "Via mare angolo via Prati",
+    "organizer": "nuccia vella"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Paderno d'Adda (LC)",
+    "date": "2026-03-21T09:00:00",
+    "city": "Paderno d'Adda (LC)",
+    "location": "Parcheggio polisportiva di via Airoldi",
+    "organizer": "Barbara Cavanna"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Santeramo in Colle (BA)",
+    "date": "2026-03-21T09:00:00",
+    "city": "Santeramo in Colle (BA)",
+    "location": "Contrada Pantarosa",
+    "organizer": "Filippo Natuzzi"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a San Giusto Canavese (TO)",
+    "date": "2026-03-21T09:00:00",
+    "city": "San Giusto Canavese (TO)",
+    "location": "Piazza della libertà (davanti salone Gioannini)",
+    "organizer": "Angelo Ferrante"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Crotone (KR)",
+    "date": "2026-03-21T09:00:00",
+    "city": "Crotone (KR)",
+    "location": "Giardino Falcone e Borsellino",
+    "organizer": "Lina Esposito"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Genova (GE)",
+    "date": "2026-03-21T09:00:00",
+    "city": "Genova (GE)",
+    "location": "Spiaggia di Priaruggia",
+    "organizer": "Miriam Loverso"
+  },
+  {
+    "type": "Raccolta mozziconi",
+    "title": "Plastic Free: Raccolta mozziconi a Genova (GE)",
+    "date": "2026-03-21T09:30:00",
+    "city": "Genova (GE)",
+    "location": "Porto Antico, Rosa dei Venti Ristorante Chi Corre: ore 9:30 Chi non corre: ore 10:15",
+    "organizer": "Simone Italiano"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Alessandria (AL)",
+    "date": "2026-03-21T09:30:00",
+    "city": "Alessandria (AL)",
+    "location": "Via della Moisa - parcheggio Eurospin",
+    "organizer": "Valentina Leardi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Savona (SV)",
+    "date": "2026-03-21T09:30:00",
+    "city": "Savona (SV)",
+    "location": "Lungomare dei Ceramisti, 11. Presso Chiosco 11",
+    "organizer": "Mirko D'Andrea"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Celle Ligure (SV)",
+    "date": "2026-03-21T09:30:00",
+    "city": "Celle Ligure (SV)",
+    "location": "Via Stefano Boagno 11, davanti al Comune",
+    "organizer": "Martina Di Adamo"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Milano (MI)",
+    "date": "2026-03-21T09:30:00",
+    "city": "Milano (MI)",
+    "location": "Cassina de' Pomm Via M.Gioia, 194 Milano",
+    "organizer": "Maria Misurato"
+  },
+  {
+    "type": "Raccolta mozziconi",
+    "title": "Plastic Free: Raccolta mozziconi a Sant'Anastasia (NA)",
+    "date": "2026-03-21T09:30:00",
+    "city": "Sant'Anastasia (NA)",
+    "location": "Piazza Madonna dell’Arco",
+    "organizer": "Francesca Romano"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Pavia (PV)",
+    "date": "2026-03-21T10:00:00",
+    "city": "Pavia (PV)",
+    "location": "Sede Sogni e Cavalli APS-ASD (Strada Scagliona)",
+    "organizer": "Davide Barbieri"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Ravenna (RA)",
+    "date": "2026-03-21T10:00:00",
+    "city": "Ravenna (RA)",
+    "location": "Parcheggio Viale Metastasio",
+    "organizer": "FRANCESCO GONDOLINI"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Pomezia (RM)",
+    "date": "2026-03-21T10:00:00",
+    "city": "Pomezia (RM)",
+    "location": "Accesso a mare 45, via Tolosa",
+    "organizer": "Cristiana Luzi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Anzio (RM)",
+    "date": "2026-03-21T10:00:00",
+    "city": "Anzio (RM)",
+    "location": "Riviera Zanardelli 76, presso ristorante TIRRENA",
+    "organizer": "Giulia Fiorillo"
+  },
+  {
+    "type": "Raccolta mozziconi",
+    "title": "Plastic Free: Raccolta mozziconi a Genova (GE)",
+    "date": "2026-03-21T10:00:00",
+    "city": "Genova (GE)",
+    "location": "Piazza De Ferrari (Ritrovo Ingresso Palazzo Ducale)",
+    "organizer": "Ivan Vianello"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Genova (GE)",
+    "date": "2026-03-21T10:00:00",
+    "city": "Genova (GE)",
+    "location": "Piazzale Kennedy, ingresso spiaggia da stradina affianco a chiosco bar, passando affianco alla Polis",
+    "organizer": "Simone Italiano"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Genova (GE)",
+    "date": "2026-03-21T10:00:00",
+    "city": "Genova (GE)",
+    "location": "Piazzale del Monte Fasce",
+    "organizer": "Ivan Vianello"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Parma (PR)",
+    "date": "2026-03-21T10:30:00",
+    "city": "Parma (PR)",
+    "location": "Ingresso principale parco la Cittadella - Via delle Rimbembranze",
+    "organizer": "Martina Corrado"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Marsala (TP)",
+    "date": "2026-03-21T11:30:00",
+    "city": "Marsala (TP)",
+    "location": "Parcobaleno-Parco Giochi -Lungomare Mediterraneo",
+    "organizer": "Carla Raineri"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Vallelaghi (TN)",
+    "date": "2026-03-21T14:00:00",
+    "city": "Vallelaghi (TN)",
+    "location": "Lago di Terlago - bar Lido",
+    "organizer": "Gloria Pedrolli"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Bergamo (BG)",
+    "date": "2026-03-21T14:00:00",
+    "city": "Bergamo (BG)",
+    "location": "Via Valmarina 25 (Sede Parco dei Colli)",
+    "organizer": "Lorenzo Sauro"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Gallarate (VA)",
+    "date": "2026-03-21T14:00:00",
+    "city": "Gallarate (VA)",
+    "location": "via Montenero 42",
+    "organizer": "Barbara Nassi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Negrar di Valpolicella (VR)",
+    "date": "2026-03-21T14:00:00",
+    "city": "Negrar di Valpolicella (VR)",
+    "location": "Via Sottocastello San Vito di Negrar",
+    "organizer": "Daria Zecchinelli"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Castellanza (VA)",
+    "date": "2026-03-21T14:00:00",
+    "city": "Castellanza (VA)",
+    "location": "parco giochi via Cantoni",
+    "organizer": "Mariachiara Formenti"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a San Felice del Benaco (BS)",
+    "date": "2026-03-21T14:00:00",
+    "city": "San Felice del Benaco (BS)",
+    "location": "Parco Donne della Costituente",
+    "organizer": "Mattia Di Mento"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Borgaro Torinese (TO)",
+    "date": "2026-03-21T14:30:00",
+    "city": "Borgaro Torinese (TO)",
+    "location": "Piazza Agorà",
+    "organizer": "Valentina Vennettilli"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Comacchio (FE)",
+    "date": "2026-03-21T14:30:00",
+    "city": "Comacchio (FE)",
+    "location": "Bagno le Piramidi Lido di Spina Via Vene di Bellocchio, 67",
+    "organizer": "Laura Felletti Spadazzi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Bussolengo (VR)",
+    "date": "2026-03-21T15:00:00",
+    "city": "Bussolengo (VR)",
+    "location": "Parcheggio Sorelle Ramonda",
+    "organizer": "Edoardo Fiorini"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Modica (RG)",
+    "date": "2026-03-21T15:00:00",
+    "city": "Modica (RG)",
+    "location": "Spiaggia Marina di Modica",
+    "organizer": "Graziano Accetta"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Soleto (LE)",
+    "date": "2026-03-21T15:30:00",
+    "city": "Soleto (LE)",
+    "location": "I.C. G. Falcone e P. Borsellino Soleto- Sternatia-Zollino",
+    "organizer": "Roberta Maniglio"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Cefalù (PA)",
+    "date": "2026-03-22T08:00:00",
+    "city": "Cefalù (PA)",
+    "location": "Parcheggio dell'Ospedale di Cefalù",
+    "organizer": "Marie-Blanche Le Mauff"
+  },
+  {
+    "type": "Hackathon",
+    "title": "Genova Climate Challenge - Hackathon Change",
+    "date": "2026-03-22T09:00:00",
+    "city": "Genova",
+    "location": "Genova Blue District",
+    "organizer": "Blue District"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Osnago (LC)",
+    "date": "2026-03-22T09:00:00",
+    "city": "Osnago (LC)",
+    "location": "Piazza della Pace",
+    "organizer": "Barbara Cavanna"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Montevecchia (LC)",
+    "date": "2026-03-22T09:00:00",
+    "city": "Montevecchia (LC)",
+    "location": "Via del Fontanile",
+    "organizer": "Sonia Corradi"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Budoni (OT)",
+    "date": "2026-03-22T09:15:00",
+    "city": "Budoni (OT)",
+    "location": "Matta e Peru 1 - Parcheggio Hotel Matta Village",
+    "organizer": "Massimo Prezioso"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Ferrara (FE)",
+    "date": "2026-03-22T09:30:00",
+    "city": "Ferrara (FE)",
+    "location": "PORPORANA VIA PALANTONE - ARGINE DEL PO",
+    "organizer": "Manuele Bergamini"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Torri del Benaco (VR)",
+    "date": "2026-03-22T09:30:00",
+    "city": "Torri del Benaco (VR)",
+    "location": "Parcheggio di via San Zeno ad albisano",
+    "organizer": "Diamanta Salaorni"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Catania (CT)",
+    "date": "2026-03-22T09:30:00",
+    "city": "Catania (CT)",
+    "location": "Seconda spiaggia libera, catania",
+    "organizer": "giuseppe sapienza"
+  },
+  {
+    "type": "Raccolta mozziconi",
+    "title": "Plastic Free: Raccolta mozziconi a Vallermosa (CA)",
+    "date": "2026-03-22T10:00:00",
+    "city": "Vallermosa (CA)",
+    "location": "Parco “Falcone e Borsellino”, via Emanuela Loi",
+    "organizer": "Alberto Garau"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Torre Boldone (BG)",
+    "date": "2026-03-22T10:00:00",
+    "city": "Torre Boldone (BG)",
+    "location": "Parco degli Alpini - Via Rinada, 7",
+    "organizer": "Margherita Ferraiuolo"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Agrigento (AG)",
+    "date": "2026-03-22T10:00:00",
+    "city": "Agrigento (AG)",
+    "location": "Foce del Fiume Akragas - Lega Navale",
+    "organizer": "Alessandro Arcuri"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Legnago (VR)",
+    "date": "2026-03-22T10:00:00",
+    "city": "Legnago (VR)",
+    "location": "Parcheggio Lidl in Via Olimpia, 2, 37045 Legnago VR",
+    "organizer": "Alessia Gozzo"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Nardò (LE)",
+    "date": "2026-03-22T10:00:00",
+    "city": "Nardò (LE)",
+    "location": "Curvone Santa Caterina, via Cantù",
+    "organizer": "Simona Ciurlia"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Pozzuoli (NA)",
+    "date": "2026-03-22T10:00:00",
+    "city": "Pozzuoli (NA)",
+    "location": "Spiaggia Monachelle(Arco felice)",
+    "organizer": "Antonio Ambrosino"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Novara (NO)",
+    "date": "2026-03-22T10:00:00",
+    "city": "Novara (NO)",
+    "location": "VIA GIOVANNI VERRAZZANO - DAVANTI ALLA DE AGOSTINI",
+    "organizer": "Federico Picariello"
+  },
+  {
+    "type": "Contest",
+    "title": "Concorso fotografico “Il mio giardino biodiverso",
+    "date": "2026-03-22T10:00:00",
+    "city": "Online / Lombardia",
+    "location": "Piattaforma Social",
+    "organizer": "Legambiente Lombardia"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Mola di Bari (BA)",
+    "date": "2026-03-22T10:30:00",
+    "city": "Mola di Bari (BA)",
+    "location": "cala portecchia",
+    "organizer": "LETIZIA VALENTINA LIPPOLIS"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Roma (RM)",
+    "date": "2026-03-22T10:30:00",
+    "city": "Roma (RM)",
+    "location": "Via dei Cerchi 55A",
+    "organizer": "Giorgia Penna"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Maratea (PZ)",
+    "date": "2026-03-22T10:30:00",
+    "city": "Maratea (PZ)",
+    "location": "Stadio Europa",
+    "organizer": "Ada Scatola"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Ortona (CH)",
+    "date": "2026-03-22T10:30:00",
+    "city": "Ortona (CH)",
+    "location": "Contrada Foro, presso stabilimento Punto Verde",
+    "organizer": "Monica Istoli"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Pavia (PV)",
+    "date": "2026-03-22T14:30:00",
+    "city": "Pavia (PV)",
+    "location": "Via Francana 7",
+    "organizer": "Davide Barbieri"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Bolzano (BZ)",
+    "date": "2026-03-22T14:30:00",
+    "city": "Bolzano (BZ)",
+    "location": "Ponte Palermo Brücke (area workout Area)",
+    "organizer": "Alexandra Perugini"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Bonate Sopra (BG)",
+    "date": "2026-03-22T15:00:00",
+    "city": "Bonate Sopra (BG)",
+    "location": "pargheggio pubblico di via C. Carsana (dietro la Cappella della Madonna delle Ghiaie)",
+    "organizer": "Silvano Ceresoli"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Forio (NA)",
+    "date": "2026-03-22T16:00:00",
+    "city": "Forio (NA)",
+    "location": "Spiaggia di Citara",
+    "organizer": "Jessica Iaccarino"
+  },
+  {
+    "type": "Eco Platform",
+    "title": "Lecco Eco Platform",
+    "date": "2026-03-24T15:45:00",
+    "city": "Lecco",
+    "location": "Lecco",
+    "organizer": "Legambiente Lombardia"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Melzo (MI)",
+    "date": "2026-03-25T08:30:00",
+    "city": "Melzo (MI)",
+    "location": "Ingresso ENAIP - Melzo",
+    "organizer": "Matteo Bignardi"
+  },
+  {
+    "type": "Workshop",
+    "title": "Coltiviamo un altro clima",
+    "date": "2026-03-25T10:00:00",
+    "city": "Milano",
+    "location": "Cascina Nascosta - Viale Emilio Alemagna 14",
+    "organizer": "Legambiente Lombardia"
+  },
+  {
+    "type": "Talk",
+    "title": "Scongeliamo i cervelli, non i ghiacciai (Matteo Motterlini)",
+    "date": "2026-03-25T16:30:00",
+    "city": "Genova",
+    "location": "Genova Blue District",
+    "organizer": "Blue District"
+  },
+  {
+    "type": "Talk",
+    "title": "Opportunità e problematiche del verde urbano",
+    "date": "2026-03-25T18:00:00",
+    "city": "Milano",
+    "location": "Milano",
+    "organizer": "Legambiente Zanna Bianca"
+  },
+  {
+    "type": "Talk",
+    "title": "Dalle Start up e dalle Imprese, idee e soluzioni per il clima",
+    "date": "2026-03-26T16:30:00",
+    "city": "Genova",
+    "location": "Genova Blue District",
+    "organizer": "Blue District"
+  },
+  {
+    "type": "Talk",
+    "title": "Riflessioni su Siccità",
+    "date": "2026-03-26T19:00:00",
+    "city": "Milano",
+    "location": "Cascina Cuccagna - Via Cuccagna 2/4",
+    "organizer": "Legambiente Zanna Bianca"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Sassari (SS)",
+    "date": "2026-03-27T10:20:00",
+    "city": "Sassari (SS)",
+    "location": "Piazzale fronte Metro (Predda Niedda)",
+    "organizer": "Laura Sias"
+  },
+  {
+    "type": "Data Talk",
+    "title": "La crisi climatica vista dai dati",
+    "date": "2026-03-27T16:00:00",
+    "city": "Genova",
+    "location": "Genova Blue District",
+    "organizer": "Blue District"
+  },
+  {
+    "type": "Talk",
+    "title": "Prati e pascoli in Erna",
+    "date": "2026-03-27T18:30:00",
+    "city": "Lecco",
+    "location": "Palazzo delle Paure - Piazza XX settembre, 22",
+    "organizer": "Legambiente Lombardia"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Padova (PD)",
+    "date": "2026-03-28T09:00:00",
+    "city": "Padova (PD)",
+    "location": "Via due palazzi 35/a",
+    "organizer": "Denis Polato"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Breda di Piave (TV)",
+    "date": "2026-03-28T09:00:00",
+    "city": "Breda di Piave (TV)",
+    "location": "Parcheggio Poste Italiane Breda di Piave",
+    "organizer": "Giovanni Tomaello"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Viterbo (VT)",
+    "date": "2026-03-28T09:00:00",
+    "city": "Viterbo (VT)",
+    "location": "Sorgente termale del Bulicame - Strada Bulicame - Viterbo -",
+    "organizer": "Ann Katrin Annika Kumlien"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Malgrate (LC)",
+    "date": "2026-03-28T09:00:00",
+    "city": "Malgrate (LC)",
+    "location": "via Roma 8, Malgrate (presso ingresso oratorio San Carlo al Porto)",
+    "organizer": "Silvia Invernizzi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Belvedere Marittimo (CS)",
+    "date": "2026-03-28T09:00:00",
+    "city": "Belvedere Marittimo (CS)",
+    "location": "Lido Azzurro",
+    "organizer": "Fabrizio Di Profio"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Acireale (CT)",
+    "date": "2026-03-28T09:00:00",
+    "city": "Acireale (CT)",
+    "location": "STAZZO P.zza Mantova",
+    "organizer": "Antonino Giuffrida"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Salerno (SA)",
+    "date": "2026-03-28T09:30:00",
+    "city": "Salerno (SA)",
+    "location": "Spiaggia pubblica via Capitolo S. Matteo angolo via Salvator Allende",
+    "organizer": "Antonio Scarpa"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Cernusco sul Naviglio (MI)",
+    "date": "2026-03-28T09:30:00",
+    "city": "Cernusco sul Naviglio (MI)",
+    "location": "Via masaccio - fronte Itsos",
+    "organizer": "Andrea F"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Pesaro (PU)",
+    "date": "2026-03-28T09:30:00",
+    "city": "Pesaro (PU)",
+    "location": "Baia Flaminia, viale Parigi 16 area antistante la spiaggia per cani",
+    "organizer": "Carolina Lazzari"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Bacoli (NA)",
+    "date": "2026-03-28T09:30:00",
+    "city": "Bacoli (NA)",
+    "location": "Spiaggia libera Miseno Via Dragonara n 44",
+    "organizer": "Antonietta Russo"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Pergine Valsugana (TN)",
+    "date": "2026-03-28T09:30:00",
+    "city": "Pergine Valsugana (TN)",
+    "location": "Piazzale della Scuola elementare di Madrano",
+    "organizer": "Marco Brugnara"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Pecetto Torinese (TO)",
+    "date": "2026-03-28T09:30:00",
+    "city": "Pecetto Torinese (TO)",
+    "location": "Piazzale Armonia Eremo",
+    "organizer": "Sara Bazzano"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Bari (BA)",
+    "date": "2026-03-28T09:30:00",
+    "city": "Bari (BA)",
+    "location": "Spiaggia di Pane e Pomodoro",
+    "organizer": "Filippo Natuzzi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Castel Volturno (CE)",
+    "date": "2026-03-28T09:30:00",
+    "city": "Castel Volturno (CE)",
+    "location": "Ingresso Oasi dei Variconi, accesso lato Centro storico",
+    "organizer": "Laura Lombari"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Varese (VA)",
+    "date": "2026-03-28T09:30:00",
+    "city": "Varese (VA)",
+    "location": "Ingresso del parco di Villa Torelli Mylius, Via Fiume, 38, 21100 Varese VA",
+    "organizer": "Mariachiara Formenti"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Ospedaletti (IM)",
+    "date": "2026-03-28T09:30:00",
+    "city": "Ospedaletti (IM)",
+    "location": "Pista ciclabile davanti ai bagni Sirena",
+    "organizer": "Daniela Musso"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Milano (MI)",
+    "date": "2026-03-28T09:30:00",
+    "city": "Milano (MI)",
+    "location": "Parco di Via Veglia 7 - adiacente area bambini",
+    "organizer": "Natalia Pop"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Valledoria (SS)",
+    "date": "2026-03-28T09:30:00",
+    "city": "Valledoria (SS)",
+    "location": "parcheggio spiaggia San Pietro al mare",
+    "organizer": "PATRIZIA MARIA GRANDJEAN"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Napoli (NA)",
+    "date": "2026-03-28T10:00:00",
+    "city": "Napoli (NA)",
+    "location": "Spiaggia di Sant'Antonio",
+    "organizer": "Stefano Pugliese"
+  },
+  {
+    "type": "Raccolta mozziconi",
+    "title": "Plastic Free: Raccolta mozziconi a Pavia (PV)",
+    "date": "2026-03-28T10:00:00",
+    "city": "Pavia (PV)",
+    "location": "Giardini del Castello Visconteo - Piazza Castello ang. XI Febbraio",
+    "organizer": "Davide Barbieri"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Cagliari (CA)",
+    "date": "2026-03-28T10:00:00",
+    "city": "Cagliari (CA)",
+    "location": "Pineta di Su Siccu, Viale Cristoforo Colombo",
+    "organizer": "Anna Nieddu"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Cefalù (PA)",
+    "date": "2026-03-28T10:00:00",
+    "city": "Cefalù (PA)",
+    "location": "Lungomare di Cefalù (Victoria Palace)",
+    "organizer": "Marie-Blanche Le Mauff"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Monza (MB)",
+    "date": "2026-03-28T10:00:00",
+    "city": "Monza (MB)",
+    "location": "Piazza del Centro Civico, San Rocco, Via Gabriele D'Annunzio 35",
+    "organizer": "GABRIELE LIVORNO"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Roma (RM)",
+    "date": "2026-03-28T10:00:00",
+    "city": "Roma (RM)",
+    "location": "Piazza Sirio (davanti Pizzeria Belsito)",
+    "organizer": "Roberto Paterniti"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Prato (PO)",
+    "date": "2026-03-28T10:00:00",
+    "city": "Prato (PO)",
+    "location": "VIA LA MONTAGNOLA 76",
+    "organizer": "Elvira Bacci"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Brescello (RE)",
+    "date": "2026-03-28T10:00:00",
+    "city": "Brescello (RE)",
+    "location": "Brescello Parcheggio Camper (fronte distributore Tamoil) - Viale Nord Soliani, 42041 Brescello RE.",
+    "organizer": "Matteo Marmiroli"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a San Vito Chietino (CH)",
+    "date": "2026-03-28T10:00:00",
+    "city": "San Vito Chietino (CH)",
+    "location": "Parcheggio spiaggia “Valle Grotte”",
+    "organizer": "Antonella Mancinelli"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Sesto Fiorentino (FI)",
+    "date": "2026-03-28T10:00:00",
+    "city": "Sesto Fiorentino (FI)",
+    "location": "Piazza Ginori, di fronte libreria Rinascita",
+    "organizer": "Simona Pezzatini"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Isola delle Femmine (PA)",
+    "date": "2026-03-28T10:00:00",
+    "city": "Isola delle Femmine (PA)",
+    "location": "Ombellico del Mondo / Ciurma",
+    "organizer": "Danilo La Mantia"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Ancona (AN)",
+    "date": "2026-03-28T10:00:00",
+    "city": "Ancona (AN)",
+    "location": "Piazzetta di fronte al supermercato Coop di CORSO CARLO ALBERTO",
+    "organizer": "Nicolò Lovadina"
+  },
+  {
+    "type": "Raccolta mozziconi",
+    "title": "Plastic Free: Raccolta mozziconi a Lusciano (CE)",
+    "date": "2026-03-28T10:00:00",
+    "city": "Lusciano (CE)",
+    "location": "PARCO NUMEROSO (BAR BOSCHETTO)",
+    "organizer": "antonio conte"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Lissone (MB)",
+    "date": "2026-03-28T10:00:00",
+    "city": "Lissone (MB)",
+    "location": "Via Pepe, ingresso Bosco Urbano",
+    "organizer": "Paolo Moras"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Reggio di Calabria (RC)",
+    "date": "2026-03-28T10:01:00",
+    "city": "Reggio di Calabria (RC)",
+    "location": "Catona - spiaggia antistante piazzetta “Tre Fontane”",
+    "organizer": "Ludovica Monteleone"
+  },
+  {
+    "type": "Raccolta mozziconi",
+    "title": "Plastic Free: Raccolta mozziconi a Torino (TO)",
+    "date": "2026-03-28T10:30:00",
+    "city": "Torino (TO)",
+    "location": "Piazza San Carlo",
+    "organizer": "Elisa Laise"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Terracina (LT)",
+    "date": "2026-03-28T10:30:00",
+    "city": "Terracina (LT)",
+    "location": "Viale Circe 278 vicino hotel \"Torre del Sole\"",
+    "organizer": "Samantha D'Andrea"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Plodio (SV)",
+    "date": "2026-03-28T14:00:00",
+    "city": "Plodio (SV)",
+    "location": "Loc. Piani Zona Pro Loco",
+    "organizer": "Manuela Torterolo"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Gussago (BS)",
+    "date": "2026-03-28T14:30:00",
+    "city": "Gussago (BS)",
+    "location": "viale Italia (parcheggio Conad)",
+    "organizer": "Antonella Resta"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Portula (BI)",
+    "date": "2026-03-28T14:30:00",
+    "city": "Portula (BI)",
+    "location": "Piazza della Chiesa",
+    "organizer": "Vladimiro Crestani"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Vicenza (VI)",
+    "date": "2026-03-28T14:30:00",
+    "city": "Vicenza (VI)",
+    "location": "Alle scalette di Monte Berico, vicino al bar “Freccia Bar”",
+    "organizer": "Jasmine Simonato"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Eraclea (VE)",
+    "date": "2026-03-28T14:30:00",
+    "city": "Eraclea (VE)",
+    "location": "Parcheggio dei Pioppi (Via Dancalia 8A, Eraclea Mare)",
+    "organizer": "Carlotta Zanin"
+  },
+  {
+    "type": "Raccolta mozziconi",
+    "title": "Plastic Free: Raccolta mozziconi a Falciano del Massico (CE)",
+    "date": "2026-03-28T15:00:00",
+    "city": "Falciano del Massico (CE)",
+    "location": "Piazza Municipio",
+    "organizer": "Claudio Battafarano"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Terre del Reno (FE)",
+    "date": "2026-03-28T15:00:00",
+    "city": "Terre del Reno (FE)",
+    "location": "Via Cavo Napoleonico parcheggio ponte del Reno/idrovora/Sant' Agostino",
+    "organizer": "Annalisa Bottazzi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Casale sul Sile (TV)",
+    "date": "2026-03-28T15:00:00",
+    "city": "Casale sul Sile (TV)",
+    "location": "Conscio-Parcheggio lato cimitero",
+    "organizer": "Silvia Sottana"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Cutrofiano (LE)",
+    "date": "2026-03-28T15:00:00",
+    "city": "Cutrofiano (LE)",
+    "location": "Via Carlo Alberto Dalla Chiesa, 13",
+    "organizer": "Beniamino Sabetta"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Udine (UD)",
+    "date": "2026-03-28T15:30:00",
+    "city": "Udine (UD)",
+    "location": "Area Verde Martiri delle Foibe UD",
+    "organizer": "Patrick Victor Fara"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Calco (LC)",
+    "date": "2026-03-29T08:45:00",
+    "city": "Calco (LC)",
+    "location": "Piazza stazione ferroviaria Olgiate Molgora-Calco-Brivio",
+    "organizer": "Ornella Pozzoni"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Olgiate Molgora (LC)",
+    "date": "2026-03-29T08:45:00",
+    "city": "Olgiate Molgora (LC)",
+    "location": "P.za stazione ferroviaria Olgiate-Calco-Brivio",
+    "organizer": "Ornella Pozzoni"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Reggio Emilia (RE)",
+    "date": "2026-03-29T09:00:00",
+    "city": "Reggio Emilia (RE)",
+    "location": "Parco del Carrozzone",
+    "organizer": "Stefano Manfredini"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Travedona-Monate (VA)",
+    "date": "2026-03-29T09:00:00",
+    "city": "Travedona-Monate (VA)",
+    "location": "Via Alla Stazione",
+    "organizer": "Alice Carcano"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Legnago (VR)",
+    "date": "2026-03-29T09:00:00",
+    "city": "Legnago (VR)",
+    "location": "Via Redentore, 4, 37045 Vangadizza VR - Circolo Noi a dx del piazzale della Chiesa",
+    "organizer": "Alessia Gozzo"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Bassano del Grappa (VI)",
+    "date": "2026-03-29T09:00:00",
+    "city": "Bassano del Grappa (VI)",
+    "location": "Quartiere Margnan Conca d'oro - via Beato M. D'Aviano",
+    "organizer": "Antonio Pagliuca"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Marcon (VE)",
+    "date": "2026-03-29T09:00:00",
+    "city": "Marcon (VE)",
+    "location": "Via Pialoi",
+    "organizer": "Gabriele Prevato"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Riccione (RN)",
+    "date": "2026-03-29T09:00:00",
+    "city": "Riccione (RN)",
+    "location": "Parco della Resistenza - Ingresso viale Montebianco",
+    "organizer": "Luca Campostrini"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Olgiate Olona (VA)",
+    "date": "2026-03-29T09:30:00",
+    "city": "Olgiate Olona (VA)",
+    "location": "via L. Greppi 4, Olgiate Olona",
+    "organizer": "Laura Lunardi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Brindisi (BR)",
+    "date": "2026-03-29T09:30:00",
+    "city": "Brindisi (BR)",
+    "location": "Spiaggia di Cala Materdomini",
+    "organizer": "Pamela Camposeo"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Ferrara (FE)",
+    "date": "2026-03-29T09:30:00",
+    "city": "Ferrara (FE)",
+    "location": "San Bartolomeo in bosco, Piazzale della Chiesa, Via Masi 174",
+    "organizer": "Giuseppe Manzo"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Siracusa (SR)",
+    "date": "2026-03-29T09:30:00",
+    "city": "Siracusa (SR)",
+    "location": "Ostrica Park - via la maddalena",
+    "organizer": "Adele Pavone"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Molinella (BO)",
+    "date": "2026-03-29T10:00:00",
+    "city": "Molinella (BO)",
+    "location": "Via Andrea Costa",
+    "organizer": "Calogero Zito"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Bergamo (BG)",
+    "date": "2026-03-29T10:00:00",
+    "city": "Bergamo (BG)",
+    "location": "Spazio Giovanile - Boccaleone - Via Gandhi",
+    "organizer": "Enrico Villagrossi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Lugo (RA)",
+    "date": "2026-03-29T10:00:00",
+    "city": "Lugo (RA)",
+    "location": "Piazza XIII Giugno, Lugo ( davanti al Salus Medical Center )",
+    "organizer": "Viola Pennini"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Vasto (CH)",
+    "date": "2026-03-29T10:15:00",
+    "city": "Vasto (CH)",
+    "location": "Monumento alla Bagnante Vasto Marina",
+    "organizer": "Maria Agnese Catalano"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a San Benedetto del Tronto (AP)",
+    "date": "2026-03-29T10:30:00",
+    "city": "San Benedetto del Tronto (AP)",
+    "location": "Via dei Laureati 97 - Zona Sentina",
+    "organizer": "Giorgia Foglietti"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Bisceglie (BT)",
+    "date": "2026-03-29T10:30:00",
+    "city": "Bisceglie (BT)",
+    "location": "zona San Francesco / BiMarmi",
+    "organizer": "Barbara Simone"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Montieri (GR)",
+    "date": "2026-03-29T11:00:00",
+    "city": "Montieri (GR)",
+    "location": "Piazzale sulla Strada Provinciale 441 al Km 17+900",
+    "organizer": "Gianluca Ranaldi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Torino (TO)",
+    "date": "2026-03-29T15:30:00",
+    "city": "Torino (TO)",
+    "location": "Via Germagnano 8 - Sede ENPA sezione di Torino",
+    "organizer": "Lorenzo Formiconi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Corciano (PG)",
+    "date": "2026-03-29T15:30:00",
+    "city": "Corciano (PG)",
+    "location": "Asilo nido Arcobaleno, Via Giovanni Giolitti",
+    "organizer": "Eleonora Favilli"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Povegliano (TV)",
+    "date": "2026-03-31T10:00:00",
+    "city": "Povegliano (TV)",
+    "location": "Scuola primaria p. Fabris, via masetto.",
+    "organizer": "sonia mazzero"
+  },
+  {
+    "type": "Raccolta mozziconi",
+    "title": "Plastic Free: Raccolta mozziconi a Fiorano Modenese (MO)",
+    "date": "2026-03-31T16:00:00",
+    "city": "Fiorano Modenese (MO)",
+    "location": "Spezzano: piazza Falcone-Borsellino",
+    "organizer": "Luciano Montanari"
+  },
+  {
+    "type": "Event",
+    "title": "POLLINI – episodio 11",
+    "date": "2026-03-31T19:00:00",
+    "city": "Milano",
+    "location": "Cascina Nascosta - Viale Emilio Alemagna 14",
+    "organizer": "Cascina Nascosta"
+  },
+  {
+    "type": "Conference",
+    "title": "I comuni alla sfida dei cambiamenti climatici 2026",
+    "date": "2026-04-02T09:15:00",
+    "city": "Monza (MB)",
+    "location": "Urban Center Monza - Via Turati, 8",
+    "organizer": "Legambiente"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Campobasso (CB)",
+    "date": "2026-04-02T16:00:00",
+    "city": "Campobasso (CB)",
+    "location": "Parcheggio CUS Vazzieri",
+    "organizer": "Alessandro De Iasio"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Cambiago (MI)",
+    "date": "2026-04-04T10:00:00",
+    "city": "Cambiago (MI)",
+    "location": "Parcheggio della logistica viale Brianza",
+    "organizer": "Sara Amlesù"
+  },
+  {
+    "type": "Talk",
+    "title": "Il clima cambia, la città si deve adattare (Federico Borromeo)",
+    "date": "2026-04-05T16:30:00",
+    "city": "Genova",
+    "location": "Genova Blue District",
+    "organizer": "Blue District"
+  },
+  {
+    "type": "Talk",
+    "title": "Industria e ambiente. La collaborazione è meglio della contrapposizione",
+    "date": "2026-04-06T16:30:00",
+    "city": "Genova",
+    "location": "Genova Blue District",
+    "organizer": "Blue District"
+  },
+  {
+    "type": "Conference",
+    "title": "I comuni alla sfida dei cambiamenti climatici 2026",
+    "date": "2026-04-09T09:15:00",
+    "city": "Monza (MB)",
+    "location": "Urban Center Monza - Via Turati, 8",
+    "organizer": "Legambiente"
+  },
+  {
+    "type": "Talk",
+    "title": "Gli strumenti digitali per la comprensione del clima",
+    "date": "2026-04-10T16:30:00",
+    "city": "Genova",
+    "location": "Genova Blue District",
+    "organizer": "Blue District"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Massa Marittima (GR)",
+    "date": "2026-04-10T17:30:00",
+    "city": "Massa Marittima (GR)",
+    "location": "Piazzale Mazzini al Gazebo Anima Guzzista e Plastic Free",
+    "organizer": "Gianluca Ranaldi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Cernusco Lombardone (LC)",
+    "date": "2026-04-11T09:00:00",
+    "city": "Cernusco Lombardone (LC)",
+    "location": "Piazza della Vittoria",
+    "organizer": "Barbara Cavanna"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Ceccano (FR)",
+    "date": "2026-04-11T09:30:00",
+    "city": "Ceccano (FR)",
+    "location": "Via dell'olmo, 6",
+    "organizer": "Giorgia Pizzuti"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Baveno (VB)",
+    "date": "2026-04-11T09:30:00",
+    "city": "Baveno (VB)",
+    "location": "Foce del Torrente Selvaspessa a Baveno",
+    "organizer": "Paolo Copiatti"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Cremeno (LC)",
+    "date": "2026-04-11T09:30:00",
+    "city": "Cremeno (LC)",
+    "location": "Parcheggio BRICO OK",
+    "organizer": "FABIANO MONETA"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Varazze (SV)",
+    "date": "2026-04-11T09:30:00",
+    "city": "Varazze (SV)",
+    "location": "Lungomare Europa spiaggia lato Cogoleto (vicino Bagni Mauro)",
+    "organizer": "sandra Marraccini"
+  },
+  {
+    "type": "Talk",
+    "title": "Per un clima di pace",
+    "date": "2026-04-11T10:00:00",
+    "city": "Canzo (CO)",
+    "location": "Prim'Alpe - Via per le Alpi",
+    "organizer": "Legambiente Lombardia"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Parma (PR)",
+    "date": "2026-04-11T11:30:00",
+    "city": "Parma (PR)",
+    "location": "Piazzale Marsala (Bar Le Petit)",
+    "organizer": "Pietro Ghidini"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Bagnolo in Piano (RE)",
+    "date": "2026-04-11T14:00:00",
+    "city": "Bagnolo in Piano (RE)",
+    "location": "PARCO EUROPA ,PARCHEGGIO SCUOLE (RITROVO PARCHEGGIO CA ROSSA)",
+    "organizer": "FULVIO SIMONAZZI"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Nardò (LE)",
+    "date": "2026-04-11T14:00:00",
+    "city": "Nardò (LE)",
+    "location": "Frascone",
+    "organizer": "Nick McCarthy"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Affi (VR)",
+    "date": "2026-04-11T14:30:00",
+    "city": "Affi (VR)",
+    "location": "Via Villabella",
+    "organizer": "Enrico Peroni"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Terrassa Padovana (PD)",
+    "date": "2026-04-11T15:00:00",
+    "city": "Terrassa Padovana (PD)",
+    "location": "Parcheggio Rotonda Arzercavalli",
+    "organizer": "Morena Casotto"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Bergamo (BG)",
+    "date": "2026-04-11T15:00:00",
+    "city": "Bergamo (BG)",
+    "location": "Giardini pubblici Rodari via Pinetti",
+    "organizer": "Claudia Tropeano"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Lendinara (RO)",
+    "date": "2026-04-11T16:00:00",
+    "city": "Lendinara (RO)",
+    "location": "Arco di Castel Trivellin",
+    "organizer": "Davide Bassi"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Martinengo (BG)",
+    "date": "2026-04-12T08:30:00",
+    "city": "Martinengo (BG)",
+    "location": "Parcheggio Palestra Palanestore",
+    "organizer": "Lara Lanzani"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Merate (LC)",
+    "date": "2026-04-12T09:00:00",
+    "city": "Merate (LC)",
+    "location": "Fraz. Novate, Parcheggio della Chiesa della Madonna della Pace - via Cerri",
+    "organizer": "Barbara Cavanna"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Agropoli (SA)",
+    "date": "2026-04-12T09:15:00",
+    "city": "Agropoli (SA)",
+    "location": "parcheggio della Baia di Trentova",
+    "organizer": "Chiara Lionetti"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a San Felice del Benaco (BS)",
+    "date": "2026-04-12T09:30:00",
+    "city": "San Felice del Benaco (BS)",
+    "location": "Porto di Portese",
+    "organizer": "Mattia Di Mento"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Racale (LE)",
+    "date": "2026-04-12T09:30:00",
+    "city": "Racale (LE)",
+    "location": "Via Lungomare 92–96 Racale",
+    "organizer": "Emanuele Manco"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Garbagnate Milanese (MI)",
+    "date": "2026-04-12T09:30:00",
+    "city": "Garbagnate Milanese (MI)",
+    "location": "Via Forlanini, 121, Garbagnate Milanese - Ingresso del Vecchio Ospedale",
+    "organizer": "Davide Elia Lattuada"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Lecce (LE)",
+    "date": "2026-04-12T09:30:00",
+    "city": "Lecce (LE)",
+    "location": "Circolo della Vela Marina di Lecce c/o Lido York - San Cataldo (Lecce)",
+    "organizer": "Andrea De Mitry"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Colleferro (RM)",
+    "date": "2026-04-12T10:00:00",
+    "city": "Colleferro (RM)",
+    "location": "Parcheggio Castello in via Fontana Bracchi",
+    "organizer": "Chiara Crescenzi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Sizzano (NO)",
+    "date": "2026-04-12T10:00:00",
+    "city": "Sizzano (NO)",
+    "location": "Piazza Prone",
+    "organizer": "Andrea Negri"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Busto Arsizio (VA)",
+    "date": "2026-04-12T10:00:00",
+    "city": "Busto Arsizio (VA)",
+    "location": "Viale Boccaccio angolo via Maderna",
+    "organizer": "Ottavia Ferrari"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Nardò (LE)",
+    "date": "2026-04-12T10:00:00",
+    "city": "Nardò (LE)",
+    "location": "Vicino Porto Selvaggio",
+    "organizer": "Nick McCarthy"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Ternate (VA)",
+    "date": "2026-04-12T10:00:00",
+    "city": "Ternate (VA)",
+    "location": "Piazzale Don Francesco Garancini - Ternate (parcheggio alto del cimitero di Ternate)",
+    "organizer": "Luca Grassi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Rosignano Marittimo (LI)",
+    "date": "2026-04-12T11:00:00",
+    "city": "Rosignano Marittimo (LI)",
+    "location": "Rosignano Solvay, Spiaggia Bianca, ingresso dal Lillatro, dove c'è il parcheggio",
+    "organizer": "Gianluca Ranaldi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Fontaniva (PD)",
+    "date": "2026-04-12T14:30:00",
+    "city": "Fontaniva (PD)",
+    "location": "Brenta Viva - Via Delle Zattere",
+    "organizer": "Roberta Antonello"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Agliè (TO)",
+    "date": "2026-04-13T14:00:00",
+    "city": "Agliè (TO)",
+    "location": "Piazza Martiri della Libertà 1, scuole di Agliè",
+    "organizer": "Angelo Ferrante"
+  },
+  {
+    "type": "Talk",
+    "title": "Abitare il futuro: Quando Blu e Green Economy generano ben-essere",
+    "date": "2026-04-13T16:30:00",
+    "city": "Genova",
+    "location": "Genova Blue District",
+    "organizer": "Blue District"
+  },
+  {
+    "type": "Raccolta mozziconi",
+    "title": "Plastic Free: Raccolta mozziconi a Alghero (SS)",
+    "date": "2026-04-13T18:00:00",
+    "city": "Alghero (SS)",
+    "location": "Piazza Sulis",
+    "organizer": "Rossella Uda"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Usellus (OR)",
+    "date": "2026-04-14T08:45:00",
+    "city": "Usellus (OR)",
+    "location": "Plesso scuola sec. I° - Usellus",
+    "organizer": "Luciano Montanari"
+  },
+  {
+    "type": "Raccolta mozziconi",
+    "title": "Plastic Free: Raccolta mozziconi a Ischia (NA)",
+    "date": "2026-04-17T16:00:00",
+    "city": "Ischia (NA)",
+    "location": "Lungomare Cristoforo Colombo",
+    "organizer": "Jessica Iaccarino"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Rivignano Teor (UD)",
+    "date": "2026-04-18T08:30:00",
+    "city": "Rivignano Teor (UD)",
+    "location": "Via Varmo, 29",
+    "organizer": "Daniele Bosca"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Madruzzo (TN)",
+    "date": "2026-04-18T09:00:00",
+    "city": "Madruzzo (TN)",
+    "location": "Lagolo - parco delle feste",
+    "organizer": "Gloria Pedrolli"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Gragnano (NA)",
+    "date": "2026-04-18T09:00:00",
+    "city": "Gragnano (NA)",
+    "location": "I.I.S. DON LORENZO MILANI",
+    "organizer": "FLORINDA IMPARATO"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Santeramo in Colle (BA)",
+    "date": "2026-04-18T09:30:00",
+    "city": "Santeramo in Colle (BA)",
+    "location": "Bosco di Mesola",
+    "organizer": "Filippo Natuzzi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Cernusco sul Naviglio (MI)",
+    "date": "2026-04-18T09:30:00",
+    "city": "Cernusco sul Naviglio (MI)",
+    "location": "Fermata villa Fiorita MM2",
+    "organizer": "Andrea F"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Abbadia Lariana (LC)",
+    "date": "2026-04-18T09:30:00",
+    "city": "Abbadia Lariana (LC)",
+    "location": "Parcheggio Parco Chiesa Rotta",
+    "organizer": "FABIANO MONETA"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Cagliari (CA)",
+    "date": "2026-04-18T10:00:00",
+    "city": "Cagliari (CA)",
+    "location": "Viale Poetto - parcheggio davanti all'Ottagono (stabilimento balneare)",
+    "organizer": "Simone Marrone"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Malnate (VA)",
+    "date": "2026-04-18T10:00:00",
+    "city": "Malnate (VA)",
+    "location": "Via Varese 32 (Ingresso pista ciclabile)",
+    "organizer": "Vittoria Colombo"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Airuno (LC)",
+    "date": "2026-04-18T14:00:00",
+    "city": "Airuno (LC)",
+    "location": "Posteggio 2 Platani",
+    "organizer": "Ornella Pozzoni"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Imbersago (LC)",
+    "date": "2026-04-18T14:00:00",
+    "city": "Imbersago (LC)",
+    "location": "Via Madonna del Bosco (Parcheggio)",
+    "organizer": "Romina Anca Chiva"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Brescia (BS)",
+    "date": "2026-04-18T14:30:00",
+    "city": "Brescia (BS)",
+    "location": "Quartiere Villagio Badia - via traversa IV, N° 5",
+    "organizer": "Antonella Resta"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Caprino Veronese (VR)",
+    "date": "2026-04-18T14:30:00",
+    "city": "Caprino Veronese (VR)",
+    "location": "Loc. Pesina - Monumento ai Caduti",
+    "organizer": "Mario Sandri"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Bondeno (FE)",
+    "date": "2026-04-18T15:00:00",
+    "city": "Bondeno (FE)",
+    "location": "Via Cavo Napoleonico incrocio strada Consorziale",
+    "organizer": "Rossella Bernardi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Millesimo (SV)",
+    "date": "2026-04-18T15:30:00",
+    "city": "Millesimo (SV)",
+    "location": "Piazza Libertà (la piazza delle scuole)",
+    "organizer": "Anna Cerrato"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Calco (LC)",
+    "date": "2026-04-19T08:45:00",
+    "city": "Calco (LC)",
+    "location": "P.za Pertini",
+    "organizer": "Ornella Pozzoni"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Lomagna (LC)",
+    "date": "2026-04-19T09:00:00",
+    "city": "Lomagna (LC)",
+    "location": "Parco Verde di Lomagna",
+    "organizer": "Barbara Cavanna"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Rivarolo Canavese (TO)",
+    "date": "2026-04-19T09:00:00",
+    "city": "Rivarolo Canavese (TO)",
+    "location": "Piazza Sunchales",
+    "organizer": "Angelo Ferrante"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Pofi (FR)",
+    "date": "2026-04-19T09:00:00",
+    "city": "Pofi (FR)",
+    "location": "Parcheggio scuole medie",
+    "organizer": "Aurora Ricci"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Altivole (TV)",
+    "date": "2026-04-19T09:00:00",
+    "city": "Altivole (TV)",
+    "location": "Centro ricreativo Caselle di Altivole",
+    "organizer": "Jessica Favretto"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Zero Branco (TV)",
+    "date": "2026-04-19T09:30:00",
+    "city": "Zero Branco (TV)",
+    "location": "Piazza Umberto I",
+    "organizer": "Sara Simionato"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Povegliano (TV)",
+    "date": "2026-04-19T09:30:00",
+    "city": "Povegliano (TV)",
+    "location": "Proloco di Camalò, via Povegliano 46",
+    "organizer": "Enrico Celotto"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Vernole (LE)",
+    "date": "2026-04-19T09:30:00",
+    "city": "Vernole (LE)",
+    "location": "Parcheggio Ultima Spiaggia, Le Cesine",
+    "organizer": "Simona Ciurlia"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Volpago del Montello (TV)",
+    "date": "2026-04-19T10:00:00",
+    "city": "Volpago del Montello (TV)",
+    "location": "Parcheggio Stadio, Via Jacopo Sansovino",
+    "organizer": "Giulia Morellato"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Alpignano (TO)",
+    "date": "2026-04-19T10:00:00",
+    "city": "Alpignano (TO)",
+    "location": "Piazza 8 Marzo",
+    "organizer": "Stefano Azzalin"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Roma (RM)",
+    "date": "2026-04-19T10:00:00",
+    "city": "Roma (RM)",
+    "location": "Parco Talenti, ingresso Via Arrigo Cajuni 8",
+    "organizer": "Rachele Mollo"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Monopoli (BA)",
+    "date": "2026-04-19T10:00:00",
+    "city": "Monopoli (BA)",
+    "location": "cala Susca",
+    "organizer": "LETIZIA VALENTINA LIPPOLIS"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Rutigliano (BA)",
+    "date": "2026-04-19T10:00:00",
+    "city": "Rutigliano (BA)",
+    "location": "Via Giovanni Falcone",
+    "organizer": "Nico D'Aversa"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Rosolina (RO)",
+    "date": "2026-04-20T14:30:00",
+    "city": "Rosolina (RO)",
+    "location": "parcheggio bagni dal Moro",
+    "organizer": "Anna Nicoli"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Gioia Tauro (RC)",
+    "date": "2026-04-22T09:00:00",
+    "city": "Gioia Tauro (RC)",
+    "location": "Via Belvedere",
+    "organizer": "Maria Cristina Altomonte"
+  },
+  {
+    "type": "Passeggiata Ecologica",
+    "title": "Plastic Free: Passeggiata Ecologica a Porto Tolle (RO)",
+    "date": "2026-04-26T09:00:00",
+    "city": "Porto Tolle (RO)",
+    "location": "PIAZZALE DI FIANCO AL RISTORANTE \"IL PORTO\" DI PORTO BARRICATA",
+    "organizer": "Riccardo Mancin"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Prato (PO)",
+    "date": "2026-04-26T10:00:00",
+    "city": "Prato (PO)",
+    "location": "Via Berlinguer 22",
+    "organizer": "Elvira Bacci"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Latina (LT)",
+    "date": "2026-04-26T10:00:00",
+    "city": "Latina (LT)",
+    "location": "Piazza dei Navigatori (Bocachica ) Foce Verde",
+    "organizer": "Silvia Salvatori"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Milano (MI)",
+    "date": "2026-05-09T10:00:00",
+    "city": "Milano (MI)",
+    "location": "Via Giovanni Spadolini angolo Via Pompeo Leoni (sulla rotonda)",
+    "organizer": "Giuseppe Dimitri"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a La Valletta Brianza (LC)",
+    "date": "2026-05-10T09:00:00",
+    "city": "La Valletta Brianza (LC)",
+    "location": "Stadio Idealità",
+    "organizer": "Ornella Pozzoni"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Merate (LC)",
+    "date": "2026-05-12T09:00:00",
+    "city": "Merate (LC)",
+    "location": "Fraz. Brugarolo - parcheggio pubblico di p.zza Unione dei Popoli",
+    "organizer": "Barbara Cavanna"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Benevento (BN)",
+    "date": "2026-05-17T10:00:00",
+    "city": "Benevento (BN)",
+    "location": "Monte Taburno - piazzale ex Hotel Taburno",
+    "organizer": "Mauro Cespa"
+  },
+  {
+    "type": "Talk",
+    "title": "Il respiro del mondo",
+    "date": "2026-05-22T20:45:00",
+    "city": "Bellusco (MB)",
+    "location": "Cineteatro San Luigi - Piazza della Chiesa, 1",
+    "organizer": "Legambiente Lombardia"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Eboli (SA)",
+    "date": "2026-05-23T09:00:00",
+    "city": "Eboli (SA)",
+    "location": "Foce Sele - Via Salvatore Pelosi, 6/A",
+    "organizer": "Elena Merola"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Olgiate Molgora (LC)",
+    "date": "2026-05-24T08:45:00",
+    "city": "Olgiate Molgora (LC)",
+    "location": "Piazza stazione ferroviaria Olgiate Molgora-Calco-Brivio",
+    "organizer": "Ornella Pozzoni"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Buguggiate (VA)",
+    "date": "2026-05-30T09:00:00",
+    "city": "Buguggiate (VA)",
+    "location": "Parcheggio Tigros Buguggiate - Via Giuseppe Verdi n. 24",
+    "organizer": "Luca Grassi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Gallarate (VA)",
+    "date": "2026-05-31T09:00:00",
+    "city": "Gallarate (VA)",
+    "location": "viale dell'Unione Europea",
+    "organizer": "Barbara Nassi"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Carugate (MI)",
+    "date": "2026-06-06T10:00:00",
+    "city": "Carugate (MI)",
+    "location": "parco di via Adamello, angolo via Mirafiori",
+    "organizer": "Carolina Pasotti"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Lomagna (LC)",
+    "date": "2026-06-07T09:00:00",
+    "city": "Lomagna (LC)",
+    "location": "Parco Verde di Lomagna",
+    "organizer": "Barbara Cavanna"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a San Felice del Benaco (BS)",
+    "date": "2026-06-07T09:30:00",
+    "city": "San Felice del Benaco (BS)",
+    "location": "Porto di San Felice del Benaco",
+    "organizer": "Mattia Di Mento"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Paderno d'Adda (LC)",
+    "date": "2026-06-13T09:00:00",
+    "city": "Paderno d'Adda (LC)",
+    "location": "Parcheggio polisportiva di via Airoldi",
+    "organizer": "Barbara Cavanna"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Genova (GE)",
+    "date": "2026-06-13T10:00:00",
+    "city": "Genova (GE)",
+    "location": "Monte Moro (Piazzale Ex Osteria)",
+    "organizer": "Ivan Vianello"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Imbersago (LC)",
+    "date": "2026-06-28T08:30:00",
+    "city": "Imbersago (LC)",
+    "location": "Via Madonna del Bosco (Parcheggio)",
+    "organizer": "Romina Anca Chiva"
+  },
+  {
+    "type": "Festival",
+    "title": "Posidonia Green Festival 2026 - Day 1",
+    "date": "2026-07-10T10:00:00",
+    "city": "Bogliasco (GE)",
+    "location": "Spiaggia e Borgo di Bogliasco",
+    "organizer": "Posidonia Green Project"
+  },
+  {
+    "type": "Festival",
+    "title": "Posidonia Green Festival 2026 - Day 2",
+    "date": "2026-07-11T10:00:00",
+    "city": "Bogliasco (GE)",
+    "location": "Spiaggia e Borgo di Bogliasco",
+    "organizer": "Posidonia Green Project"
+  },
+  {
+    "type": "Festival",
+    "title": "Posidonia Green Festival 2026 - Day 3",
+    "date": "2026-07-12T10:00:00",
+    "city": "Bogliasco (GE)",
+    "location": "Spiaggia e Borgo di Bogliasco",
+    "organizer": "Posidonia Green Project"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Cernusco Lombardone (LC)",
+    "date": "2026-09-12T09:00:00",
+    "city": "Cernusco Lombardone (LC)",
+    "location": "Piazza della Vittoria",
+    "organizer": "Barbara Cavanna"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Airuno (LC)",
+    "date": "2026-09-19T14:00:00",
+    "city": "Airuno (LC)",
+    "location": "Posteggio Due Platani",
+    "organizer": "Ornella Pozzoni"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Merate (LC)",
+    "date": "2026-09-20T09:00:00",
+    "city": "Merate (LC)",
+    "location": "Parcheggio via F.lli Cernuschi (ex scuole elementari)",
+    "organizer": "Barbara Cavanna"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Olgiate Molgora (LC)",
+    "date": "2026-09-27T08:45:00",
+    "city": "Olgiate Molgora (LC)",
+    "location": "Piazza stazione ferroviaria Olgiate Molgora-Calco-Brivio",
+    "organizer": "Ornella Pozzoni"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Osnago (LC)",
+    "date": "2026-10-04T09:00:00",
+    "city": "Osnago (LC)",
+    "location": "Piazza della Pace",
+    "organizer": "Barbara Cavanna"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Osnago (LC)",
+    "date": "2026-10-04T09:00:00",
+    "city": "Osnago (LC)",
+    "location": "Piazza della Pace",
+    "organizer": "Barbara Cavanna"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Lomagna (LC)",
+    "date": "2026-10-11T09:00:00",
+    "city": "Lomagna (LC)",
+    "location": "Parco Verde di Lomagna",
+    "organizer": "Barbara Cavanna"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Airuno (LC)",
+    "date": "2026-10-17T14:00:00",
+    "city": "Airuno (LC)",
+    "location": "Posteggio Due Platani",
+    "organizer": "Ornella Pozzoni"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Merate (LC)",
+    "date": "2026-10-18T09:00:00",
+    "city": "Merate (LC)",
+    "location": "Piazza degli Eroi, davanti al municipio",
+    "organizer": "Barbara Cavanna"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Imbersago (LC)",
+    "date": "2026-10-25T08:30:00",
+    "city": "Imbersago (LC)",
+    "location": "Via Madonna del Bosco (Parcheggio)",
+    "organizer": "Romina Anca Chiva"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Olgiate Molgora (LC)",
+    "date": "2026-10-25T08:45:00",
+    "city": "Olgiate Molgora (LC)",
+    "location": "Piazza stazione ferroviaria Olgiate Molgora-Calco-Brivio",
+    "organizer": "Ornella Pozzoni"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Merate (LC)",
+    "date": "2026-11-15T09:00:00",
+    "city": "Merate (LC)",
+    "location": "Frazione di Pagnano - Parcheggio pubblico di Via Cappelletta",
+    "organizer": "Barbara Cavanna"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Plastic Free: CleanUp a Lomagna (LC)",
+    "date": "2026-11-22T09:00:00",
+    "city": "Lomagna (LC)",
+    "location": "Parco Verde di Lomagna",
+    "organizer": "Barbara Cavanna"
+  }
+]

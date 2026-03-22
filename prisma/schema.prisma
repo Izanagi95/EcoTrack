@@ -1,0 +1,62 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id              String     @id @default(cuid())
+  name            String
+  avatarUrl       String
+  ecoScore        Int        @default(0)
+  level           String     @default("Beginner")
+  co2SavedKg      Float      @default(0)
+  wasteRecycledKg Float      @default(0)
+  energySavedKwh  Float      @default(0)
+  streakDays      Int           @default(0)
+  activities      Activity[]
+  consumptions    Consumption[]
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime   @updatedAt
+}
+
+model Activity {
+  id            String   @id @default(cuid())
+  userId        String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type          String
+  title         String
+  description   String
+  points        Int
+  co2SavedValue Float?
+  imageUrl      String?
+  date          DateTime @default(now())
+  createdAt     DateTime @default(now())
+}
+
+model Consumption {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type      String   // 'Luce', 'Gas', 'Acqua'
+  value     Float    // kWh, smc, etc
+  cost      Float?   // in EUR
+  period    DateTime // The month/year the bill refers to
+  createdAt DateTime @default(now())
+}
+
+model CommunityEvent {
+  id          String   @id @default(cuid())
+  type        String   // 'CleanUp', 'Passeggiata Ecologica', etc
+  title       String
+  date        DateTime
+  city        String
+  location    String
+  organizer   String
+  link        String   @default("#")
+  createdAt   DateTime @default(now())
+}

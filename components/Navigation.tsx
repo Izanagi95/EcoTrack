@@ -1,0 +1,39 @@
+'use client';
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import styles from './Navigation.module.css';
+
+export default function Navigation() {
+  const pathname = usePathname();
+
+  const navItems = [
+    { name: 'Dashboard', path: '/dashboard', icon: '📊' },
+    { name: 'Feed', path: '/', icon: '🌍' },
+    { name: 'Track', path: '/track', icon: '⚡' },
+    { name: 'Community', path: '/community', icon: '👥' },
+    { name: 'Decalogo', path: '/decalogo', icon: '📜' },
+    { name: 'Profile', path: '/profile', icon: '👤' },
+  ];
+
+
+  return (
+    <nav className={styles.navContainer}>
+      <div className={styles.navMenu}>
+        {navItems.map((item) => {
+          const isActive = pathname === item.path;
+          return (
+            <Link 
+              key={item.name} 
+              href={item.path}
+              className={`${styles.navItem} ${isActive ? styles.active : ''}`}
+            >
+              <span className={styles.icon}>{item.icon}</span>
+              <span className={styles.label}>{item.name}</span>
+            </Link>
+          );
+        })}
+      </div>
+    </nav>
+  );
+}

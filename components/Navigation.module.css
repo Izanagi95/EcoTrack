@@ -1,0 +1,114 @@
+.navContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid var(--border);
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .navContainer {
+    background: rgba(30, 41, 59, 0.85);
+  }
+}
+
+.navMenu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.navItem:hover {
+  color: var(--primary);
+}
+
+.navItem:active {
+  transform: scale(0.95);
+}
+
+.icon {
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.label {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.active {
+  color: var(--primary);
+}
+
+.active .icon {
+  transform: translateY(-2px);
+}
+
+/* Desktop Sidebar overriding mobile bottom nav */
+@media (min-width: 768px) {
+  .navContainer {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    border-top: none;
+    border-right: 1px solid var(--border);
+    justify-content: flex-start;
+    padding-top: 3rem;
+  }
+
+  .navMenu {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    max-width: 100%;
+    padding: 0 1.5rem;
+    gap: 1rem;
+  }
+
+  .navItem {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+    flex: none;
+  }
+
+  .navItem:hover {
+    background: var(--surface-hover);
+  }
+
+  .active {
+    background: rgba(16, 185, 129, 0.1);
+  }
+
+  .label {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,412 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.podiumSection {
+  padding-top: 1rem;
+}
+
+.podium {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.5rem;
+  height: 240px;
+  padding-bottom: 1rem;
+}
+
+.podiumPlace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.podiumAvatar {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.podiumAvatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.rankBadge {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: white;
+  border: 2px solid white;
+}
+
+.first .podiumAvatar {
+  width: 90px;
+  height: 90px;
+  border: 4px solid #FFD700;
+}
+.first .rankBadge { background: #FFD700; }
+.second .podiumAvatar { border: 3px solid #C0C0C0; }
+.second .rankBadge { background: #C0C0C0; }
+.third .podiumAvatar { border: 3px solid #CD7F32; }
+.third .rankBadge { background: #CD7F32; }
+
+.crown {
+  font-size: 1.5rem;
+  margin-bottom: -0.5rem;
+  z-index: 2;
+}
+
+.podiumName {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.podiumScore {
+  font-size: 0.85rem;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+/* Events Styles */
+.eventsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.viewAll {
+  font-size: 0.85rem;
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.eventsGrid {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  padding: 0.5rem 0.2rem 1rem;
+  scrollbar-width: none;
+}
+
+.eventsGrid::-webkit-scrollbar {
+  display: none;
+}
+
+.eventCard {
+  min-width: 280px;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  transition: transform 0.2s;
+}
+
+.eventCard:hover {
+  transform: translateY(-5px);
+}
+
+.eventDate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-color);
+  border-radius: var(--radius-md);
+  min-width: 60px;
+  height: 60px;
+  border: 1px solid var(--border);
+}
+
+.day {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.month {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.eventInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.partnerLogo {
+  width: 28px;
+  height: 28px;
+  background: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.logoImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1px;
+}
+
+
+.eventTypeBadge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+  background: var(--primary);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-full);
+  align-self: flex-start;
+}
+
+
+.eventTypeBadge.blue {
+  background: #2563eb; /* A nice Blue District shade */
+}
+
+
+.eventTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0.2rem 0;
+}
+
+.eventLoc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.eventFooter {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.organizer {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.joinTinyBtn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-md);
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Main Grid */
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+.challengeCard {
+  padding: 1.5rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--primary);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), transparent);
+}
+
+.challengeHeader {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.challengeIconBox {
+  font-size: 2rem;
+  width: 56px;
+  height: 56px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.challengeTitle {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.challengeDesc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.progressBar {
+  width: 100%;
+  height: 10px;
+  background: var(--bg-color);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--primary);
+  border-radius: var(--radius-full);
+}
+
+.progressSub {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.joinBtn {
+  width: 100%;
+  padding: 1.1rem;
+  background: linear-gradient(135deg, var(--primary), #059669);
+  color: white;
+  border: none;
+  border-radius: var(--radius-lg);
+  font-weight: 800;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+.joinBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
+}
+
+.joinBtn:disabled {
+  background: linear-gradient(135deg, #94a3b8, #64748b);
+  opacity: 0.8;
+  cursor: default;
+}
+
+
+.leaderboardList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.leaderboardItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+.rank {
+  font-weight: 800;
+  color: var(--text-secondary);
+  width: 30px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userInfo {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userName {
+  font-weight: 600;
+}
+
+.score {
+  font-weight: 800;
+  color: var(--primary);
+}
+
+@media (min-width: 768px) {
+  .podium {
+    height: 300px;
+    gap: 3rem;
+  }
+  .podiumAvatar { width: 100px; height: 100px; }
+  .first .podiumAvatar { width: 130px; height: 130px; }
+  
+  .mainGrid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+  
+  .eventsGrid {
+    overflow-x: inherit;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}

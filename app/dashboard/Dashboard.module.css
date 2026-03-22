@@ -1,0 +1,505 @@
+.container {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* TIER 0: SUMMARY ROW */
+.summaryRow {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.compactCard {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  padding: 1.25rem;
+  border-radius: var(--radius-lg);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.compactMain {
+  display: flex;
+  flex-direction: column;
+}
+
+.compactLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+}
+
+.compactValue {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.compactProgress {
+  flex: 1;
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+}
+
+.progressFill {
+  height: 100%;
+  background: white;
+  border-radius: var(--radius-full);
+  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progressText {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.statsHighlight {
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid var(--border);
+  background: rgba(var(--primary-rgb), 0.02);
+}
+
+.statMini {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.statIcon {
+  font-size: 1.5rem;
+  background: rgba(var(--primary-rgb), 0.1);
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.statText {
+  display: flex;
+  flex-direction: column;
+}
+
+.statVal {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.statLab {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* MAIN GRID STRUCTURE */
+.mainGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1rem 2rem;
+}
+
+/* TIER 1: WEEKLY IMPACT */
+.impactSectionFull {
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+.areaHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.areaTitle {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.impactLegend {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.legEnergy::before, .legTransport::before, .legCircular::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  margin-right: 4px;
+}
+
+.legEnergy::before { background: #3b82f6; }
+.legTransport::before { background: #10b981; }
+.legCircular::before { background: #f59e0b; }
+
+.stackedChartLarge {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 220px;
+  padding: 0 1rem;
+}
+
+.barGroupLarge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.barStackImpact {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 32px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.segmentEnergy { background: #3b82f6; }
+.segmentTransport { background: #10b981; }
+.segmentCircular { background: #f59e0b; }
+
+.segmentEnergy, .segmentTransport, .segmentCircular {
+  width: 100%;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.barTooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text-primary);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.barStackImpact:hover .barTooltip {
+  opacity: 1;
+}
+
+.dayLabelLarge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+/* TIER 2: STATS BAR */
+.statsBarContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: rgba(var(--primary-rgb), 0.03);
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.statInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.statInfo strong {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.statInfo span {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background: var(--border);
+}
+
+/* TIER 3: SECONDARY GRID (STEPS & TRENDS) */
+.secondaryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.stepHistoryCard, .miniConsumptionCard {
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+.stepChart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 120px;
+  margin-top: 1rem;
+}
+
+.stepBarGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.stepBar {
+  width: 12px;
+  background: var(--primary);
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.stepTooltip {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6rem;
+  font-weight: 700;
+  opacity: 0;
+}
+
+.stepBar:hover .stepTooltip { opacity: 1; }
+
+.stepDayLabel {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.miniTrends {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.trendBubbles {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.trendBubble {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  background: rgba(var(--primary-rgb), 0.02);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--border);
+}
+
+.trendBubble span {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.trendBubble strong {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.up strong { color: #ef4444; }
+.down strong { color: #10b981; }
+
+.microChart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 80px;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border);
+}
+
+.microBarGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.microBarStack {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.microBarLuce {
+  width: 8px;
+  background: #3b82f6;
+  border-radius: 2px;
+}
+
+.microBarGas {
+  width: 8px;
+  background: #f59e0b;
+  border-radius: 2px;
+}
+
+.microDate {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+/* TIER 4: BOTTOM GRID (HISTORY & SUGGESTIONS) */
+.bottomGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.historyCard, .suggestionCard {
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+.filterPills {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filterPill {
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: transparent;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.activePill {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.activityScroll {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  max-height: 280px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.activityItemRow {
+  display: flex;
+  align-items: center;
+  padding: 0.85rem;
+  border-radius: var(--radius-md);
+  background: rgba(var(--primary-rgb), 0.04);
+  gap: 1rem;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.activityItemRow:hover {
+  background: rgba(var(--primary-rgb), 0.07);
+  border-color: var(--border);
+}
+
+.actIcon { font-size: 1.3rem; }
+.actInfo { flex: 1; display: flex; flex-direction: column; }
+.actTitle { font-size: 0.95rem; font-weight: 700; color: var(--text-primary); }
+.actDate { font-size: 0.75rem; color: var(--text-secondary); font-weight: 500; }
+.actPoints { font-size: 1.05rem; font-weight: 800; color: var(--primary); }
+
+.suggList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.suggItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem;
+  background: rgba(var(--primary-rgb), 0.02);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+.suggIcon { font-size: 1.4rem; }
+.suggInfo { flex: 1; }
+.suggInfo p { margin: 0; font-size: 0.9rem; font-weight: 700; color: var(--text-primary); }
+.suggInfo span { font-size: 0.75rem; color: var(--primary); font-weight: 800; }
+.suggLink { 
+  text-decoration: none; 
+  color: var(--text-secondary); 
+  font-weight: 900;
+  transition: color 0.2s;
+}
+.suggLink:hover { color: var(--primary); }
+
+@media (max-width: 1024px) {
+  .summaryRow, .secondaryGrid, .bottomGrid {
+    grid-template-columns: 1fr;
+  }
+}
