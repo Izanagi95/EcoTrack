@@ -3,14 +3,62 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Community.module.css';
+import { quizQuestionsBank, initialGroupChallengeHistory } from '@/lib/mockData';
 
-export default function CommunityClient({ leaderboards, communityEvents }: any) {
+export default function CommunityClient({ leaderboards, communityEvents, currentUser }: any) {
   const [hasJoined, setHasJoined] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
+  const [viewMode, setViewMode] = useState<'global' | 'group' | 'city' | 'neighborhood'>('global');
+
+  // Quiz states
+  const [challengeHistory, setChallengeHistory] = useState(initialGroupChallengeHistory);
+  const [quizQuestions, setQuizQuestions] = useState<any[]>([]);
+  const [quizOpen, setQuizOpen] = useState(false);
+  const [quizIndex, setQuizIndex] = useState(0);
+  const [quizScore, setQuizScore] = useState(0);
+  const [quizResult, setQuizResult] = useState<'win' | 'loss' | null>(null);
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
+
+  const startQuiz = () => {
+    const shuffled = [...quizQuestionsBank].sort(() => 0.5 - Math.random());
+    setQuizQuestions(shuffled.slice(0, 10));
+    setQuizOpen(true);
+    setQuizIndex(0);
+    setQuizScore(0);
+    setQuizResult(null);
+  };
+
+  const handleAnswer = (selectedIdx: number) => {
+    const isCorrect = selectedIdx === quizQuestions[quizIndex].correctAnswer;
+    const currentScore = isCorrect ? quizScore + 1 : quizScore;
+    if (isCorrect) setQuizScore(currentScore);
+
+    if (quizIndex < quizQuestions.length - 1) {
+      setQuizIndex(i => i + 1);
+    } else {
+      // Fine quiz
+      const isWin = currentScore >= 6; // win with 6 or more out of 10
+      setQuizResult(isWin ? 'win' : 'loss');
+      
+      const newHistoryItem = {
+        id: `ch_${Date.now()}`,
+        opponentName: 'EcoCampioni',
+        date: new Date().toISOString(),
+        result: isWin ? 'win' : 'loss',
+        pointsChange: isWin ? 200 : -20,
+      };
+      setChallengeHistory([newHistoryItem, ...challengeHistory]);
+    }
+  };
+
+  const closeQuiz = () => {
+    setQuizOpen(false);
+    setQuizResult(null);
+  };
+
 
   const getPartnerLogo = (organizer: string, title?: string) => {
     const combined = `${organizer} ${title || ''}`.toLowerCase();
@@ -39,13 +87,51 @@ export default function CommunityClient({ leaderboards, communityEvents }: any) 
 
 
   // Podium logic
-  const podium = leaderboards.slice(0, 3);
-  const rest = leaderboards.slice(3);
+  const userCity = currentUser?.city || 'Genova';
+  const userNeighborhood = currentUser?.neighborhood || 'Bogliasco';
+
+  const groupMembers = leaderboards.filter((u: any) => u.teamId === currentUser?.teamId); 
+  const cityMembers = leaderboards.filter((u: any) => u.city === userCity);
+  const neighborhoodMembers = leaderboards.filter((u: any) => u.neighborhood === userNeighborhood);
+
+  let activeLeaderboard = leaderboards;
+  if (viewMode === 'group') activeLeaderboard = groupMembers;
+  else if (viewMode === 'city') activeLeaderboard = cityMembers;
+  else if (viewMode === 'neighborhood') activeLeaderboard = neighborhoodMembers;
+
+  const podium = activeLeaderboard.slice(0, 3);
+  const rest = activeLeaderboard.slice(3);
 
   return (
     <main className={styles.container}>
       <header className="page-header glass">
         <h1 className="page-title page-title-gradient">Community & Sfide</h1>
+        <div className={styles.viewToggle}>
+          <button 
+            className={`${styles.toggleBtn} ${viewMode === 'global' ? styles.activeToggle : ''}`}
+            onClick={() => setViewMode('global')}
+          >
+            🌎 Globale
+          </button>
+          <button 
+            className={`${styles.toggleBtn} ${viewMode === 'city' ? styles.activeToggle : ''}`}
+            onClick={() => setViewMode('city')}
+          >
+            🌆 Città
+          </button>
+          <button 
+            className={`${styles.toggleBtn} ${viewMode === 'neighborhood' ? styles.activeToggle : ''}`}
+            onClick={() => setViewMode('neighborhood')}
+          >
+            🏘️ Quartiere
+          </button>
+          <button 
+            className={`${styles.toggleBtn} ${viewMode === 'group' ? styles.activeToggle : ''}`}
+            onClick={() => setViewMode('group')}
+          >
+            👥 Il Mio Gruppo
+          </button>
+        </div>
       </header>
 
       {/* Podium Section */}
@@ -134,6 +220,17 @@ export default function CommunityClient({ leaderboards, communityEvents }: any) 
         </div>
       </section>
 
+      {/* Network Banner */}
+      <section className={`${styles.networkBanner} glass animate-fade-in`}>
+        <div className={styles.bannerInfo}>
+          <h3>🤝 Il nostro Network Locale</h3>
+          <p>Scopri le associazioni, come WWF e Legambiente, con cui collaboriamo per le nostre sfide.</p>
+        </div>
+        <Link href="/network" className={`${styles.joinBtn} btn-secondary`} style={{ width: 'auto', padding: '0.8rem 1.5rem', whiteSpace: 'nowrap' }}>
+          Esplora il Network
+        </Link>
+      </section>
+
       <div className={styles.mainGrid}>
         {/* Left Column: Challenges */}
         <section className={styles.challengesColumn}>
@@ -163,33 +260,122 @@ export default function CommunityClient({ leaderboards, communityEvents }: any) 
             >
               {hasJoined ? 'Sfida Attivata' : 'Inizia Sfida'}
             </button>
+          </div>
 
+          <div className={`${styles.challengeCard} glass animate-fade-in`} style={{ marginTop: '1rem' }}>
+            <div className={styles.challengeHeader}>
+              <div className={styles.challengeIconBox}>⚔️</div>
+              <div className={styles.challengeMeta}>
+                <h3 className={styles.challengeTitle}>Sfida di Gruppo: EcoCampioni</h3>
+                <p className={styles.challengeDesc}>Sfida a quiz contro un altro team. Rispondi col tuo gruppo per vincere 200 pt o perderne 20!</p>
+              </div>
+            </div>
+            <button 
+              className={`${styles.joinBtn} btn-primary`}
+              onClick={startQuiz}
+            >
+              Avvia Sfida a Quiz
+            </button>
+          </div>
+
+          <h2 className={styles.sectionTitle} style={{ marginTop: '2.5rem' }}>📜 Storico Sfide di Gruppo</h2>
+          <div className={styles.historyList}>
+            {challengeHistory.map((item: any, idx: number) => (
+              <div key={item.id} className={`${styles.historyItem} glass animate-fade-in`} style={{ animationDelay: `${idx * 0.05}s` }}>
+                <div className={styles.historyMeta}>
+                  <strong>vs {item.opponentName}</strong>
+                  <span className={styles.historyDate}>
+                    {isMounted ? new Date(item.date).toLocaleDateString('it-IT') : ''}
+                  </span>
+                </div>
+                <div className={`${styles.historyResult} ${item.result === 'win' ? styles.win : styles.loss}`}>
+                  <span>{item.result === 'win' ? 'Vittoria 🏆' : 'Sconfitta ❌'}</span>
+                  <span className={styles.historyPoints}>
+                    {item.pointsChange > 0 ? `+${item.pointsChange}` : item.pointsChange} pt
+                  </span>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
 
 
         {/* Right Column: Rest of Leaderboard */}
         <section className={styles.leaderboardColumn}>
-          <h2 className={styles.sectionTitle}>📊 Classifica Generale</h2>
+          <h2 className={styles.sectionTitle}>
+            📊 Classifica {
+              viewMode === 'global' ? 'Generale' : 
+              viewMode === 'city' ? `di ${userCity}` :
+              viewMode === 'neighborhood' ? `di ${userNeighborhood}` :
+              'del Tuo Gruppo'
+            }
+          </h2>
           <div className={styles.leaderboardList}>
-            {rest.map((user: any, index: number) => (
-              <div 
-                key={user.id} 
-                className={`${styles.leaderboardItem} glass animate-fade-in`}
-                style={{ animationDelay: `${index * 0.05}s` }}
-              >
+            {rest.length > 0 ? (
+              rest.map((user: any, index: number) => (
+                <div 
+                  key={user.id} 
+                  className={`${styles.leaderboardItem} glass animate-fade-in`}
+                  style={{ animationDelay: `${index * 0.05}s` }}
+                >
 
-                <span className={styles.rank}>#{user.rank || index + 4}</span>
-                <img src={user.avatarUrl} alt={user.name} className={styles.avatar} />
-                <div className={styles.userInfo}>
-                  <span className={styles.userName}>{user.name}</span>
-                  <span className={styles.score}>{user.score} pt</span>
+                  <span className={styles.rank}>#{user.rank || index + 4}</span>
+                  <img src={user.avatarUrl} alt={user.name} className={styles.avatar} />
+                  <div className={styles.userInfo}>
+                    <span className={styles.userName}>{user.name}</span>
+                    <span className={styles.score}>{user.score} pt</span>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))
+            ) : (
+              <p className={styles.emptySmall} style={{ textAlign: 'center', opacity: 0.7, padding: '1rem' }}>
+                {viewMode === 'group' 
+                  ? '🏆 Tutti i membri del tuo gruppo sono sul podio!' 
+                  : viewMode === 'neighborhood'
+                  ? 'Non ci sono altri utenti nel tuo quartiere.'
+                  : viewMode === 'city'
+                  ? 'Non ci sono altri utenti nella tua città.'
+                  : 'Nessun altro utente in classifica.'}
+              </p>
+            )}
           </div>
         </section>
       </div>
+
+      {quizOpen && (
+        <div className={styles.modalOverlay}>
+          <div className={`${styles.quizModal} glass animate-fade-in`}>
+            {!quizResult ? (
+              <div className={styles.quizContent}>
+                <h3 className={styles.quizProgress}>Domanda {quizIndex + 1} di {quizQuestions.length}</h3>
+                <p className={styles.quizQuestion}>{quizQuestions[quizIndex].text}</p>
+                <div className={styles.quizOptions}>
+                  {quizQuestions[quizIndex].options.map((opt: string, idx: number) => (
+                    <button 
+                      key={idx} 
+                      className={styles.quizOptionBtn}
+                      onClick={() => handleAnswer(idx)}
+                    >
+                      {opt}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <div className={styles.quizResultBox}>
+                <h3 className={styles.quizResultTitle}>{quizResult === 'win' ? 'Hai Vinto! 🏆' : 'Hai Perso 😔'}</h3>
+                <p className={styles.quizResultDesc}>Il tuo gruppo ha risposto correttamente a {quizScore} domande su {quizQuestions.length}.</p>
+                <p className={quizResult === 'win' ? styles.winText : styles.lossText}>
+                  {quizResult === 'win' ? '+200 punti per il tuo gruppo!' : '-20 punti per il tuo gruppo.'}
+                </p>
+                <button className={`${styles.joinBtn} btn-primary`} style={{ marginTop: '1.5rem' }} onClick={closeQuiz}>
+                  Chiudi e torna alla Community
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </main>
   );
 }

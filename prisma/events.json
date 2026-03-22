@@ -1918,5 +1918,69 @@
     "city": "Lomagna (LC)",
     "location": "Parco Verde di Lomagna",
     "organizer": "Barbara Cavanna"
+  },
+  {
+    "type": "Progetto",
+    "title": "Progetto SCIE \"Salviamo la Cladocora\": snorkeling, webinar reti fantasma, rimozione attrezzi",
+    "date": "2027-03-01T00:00:00",
+    "city": "Genova",
+    "location": "Genova",
+    "organizer": "WWF"
+  },
+  {
+    "type": "Seminario",
+    "title": "Progetto SCIE \"ghostgear\": seminario online con WWF sub",
+    "date": "2026-03-03T00:00:00",
+    "city": "Genova",
+    "location": "Online",
+    "organizer": "WWF"
+  },
+  {
+    "type": "CleanUp",
+    "title": "Progetto SCIE \"Adopt a beach\": pulizia spiagge e raccolta dati inquinamento",
+    "date": "2026-03-25T00:00:00",
+    "city": "Genova",
+    "location": "Spiagge di Genova",
+    "organizer": "WWF"
+  },
+  {
+    "type": "Progetto",
+    "title": "Servizio civile: riqualificazione urbana, stili di vita sostenibili, economia circolare",
+    "date": "2026-04-08T00:00:00",
+    "city": "Genova",
+    "location": "Genova",
+    "organizer": "Legambiente"
+  },
+  {
+    "type": "Open day",
+    "title": "Open day Legambiente",
+    "date": "2026-04-01T00:00:00",
+    "city": "Genova",
+    "location": "Sede Centrale",
+    "organizer": "Legambiente"
+  },
+  {
+    "type": "Conferenza",
+    "title": "Conferenza \"Effetti farfalla: solo la tua felicità può salvare il pianeta\"",
+    "date": "2025-09-26T00:00:00",
+    "city": "Genova",
+    "location": "Sede CEAS",
+    "organizer": "CEAS"
+  },
+  {
+    "type": "Progetto",
+    "title": "Progetto Pedibus: insieme per promuovere la salute all'insegna dell'equità",
+    "date": "2025-09-22T00:00:00",
+    "city": "Genova",
+    "location": "Scuole di Genova",
+    "organizer": "CEAS"
+  },
+  {
+    "type": "Laboratorio",
+    "title": "Progetto Fiumare: laboratori gratuiti e attività rivolte alla cittadinanza in base al fiume",
+    "date": "2025-04-09T00:00:00",
+    "city": "Genova",
+    "location": "Genova",
+    "organizer": "CEAS"
   }
 ]

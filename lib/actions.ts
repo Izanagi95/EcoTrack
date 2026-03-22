@@ -2,25 +2,38 @@
 
 import { prisma } from './prisma';
 
+import { currentUser as mockCurrentUser } from './mockData';
+
 const CURRENT_USER_ID = 'u1';
 
 export async function getCurrentUser() {
-  const user = await prisma.user.findUnique({ where: { id: CURRENT_USER_ID } });
-  if (!user) return null;
-  
-  return {
-    id: user.id,
-    name: user.name,
-    avatarUrl: user.avatarUrl,
-    ecoScore: user.ecoScore,
-    level: user.level,
-    stats: {
-      co2SavedKg: user.co2SavedKg,
-      wasteRecycledKg: user.wasteRecycledKg,
-      energySavedKwh: user.energySavedKwh,
-      streakDays: user.streakDays,
-    }
-  };
+  try {
+    const user = await prisma.user.findUnique({ 
+      where: { id: CURRENT_USER_ID },
+      include: { team: true }
+    });
+    if (!user) return mockCurrentUser;
+    
+    return {
+      id: user.id,
+      name: user.name,
+      avatarUrl: user.avatarUrl,
+      ecoScore: user.ecoScore,
+      level: user.level,
+      stats: {
+        co2SavedKg: user.co2SavedKg,
+        wasteRecycledKg: user.wasteRecycledKg,
+        energySavedKwh: user.energySavedKwh,
+        streakDays: user.streakDays,
+      },
+      teamId: user.teamId || mockCurrentUser.teamId,
+      team: user.team || mockCurrentUser.team,
+      city: 'Genova',
+      neighborhood: 'Bogliasco'
+    };
+  } catch (e) {
+    return mockCurrentUser;
+  }
 }
 
 export async function getUserActivities() {
@@ -31,29 +44,48 @@ export async function getUserActivities() {
   return activities;
 }
 
-export async function getFeedActivities() {
-  const activities = await prisma.activity.findMany({
-    orderBy: { date: 'desc' },
-    include: { user: true }
-  });
+import { feedActivities as mockFeedActivities } from './mockData';
 
-  // Map to the shape expected by UI if needed
-  // UI might not expect 'user' relation but we can pass it
-  return activities;
+export async function getFeedActivities() {
+  try {
+    const activities = await prisma.activity.findMany({
+      orderBy: { date: 'desc' },
+      include: { user: true }
+    });
+
+    if (activities.length === 0) return mockFeedActivities;
+
+    return activities;
+  } catch (e) {
+    return mockFeedActivities;
+  }
 }
 
-export async function getLeaderboard() {
-  const users = await prisma.user.findMany({
-    orderBy: { ecoScore: 'desc' },
-    take: 10
-  });
+import { leaderboards as mockLeaderboards } from './mockData';
 
-  return users.map((u: any, i: number) => ({
-    rank: i + 1,
-    name: u.name,
-    score: u.ecoScore,
-    avatarUrl: u.avatarUrl,
-  }));
+export async function getLeaderboard() {
+  try {
+    const users = await prisma.user.findMany({
+      orderBy: { ecoScore: 'desc' },
+      take: 10,
+      include: { team: true }
+    });
+
+    if (users.length === 0) return mockLeaderboards;
+
+    return users.map((u: any, i: number) => ({
+      rank: i + 1,
+      name: u.name,
+      score: u.ecoScore,
+      avatarUrl: u.avatarUrl,
+      teamId: u.teamId,
+      team: u.team,
+      city: u.id === 'u4' ? 'Torino' : u.id === 'u5' ? 'Milano' : u.id === 'u99' ? 'Roma' : 'Genova',
+      neighborhood: (u.id === 'u1' || u.id === 'u10' || u.id === 'u2') ? 'Bogliasco' : u.id === 'u3' ? 'Albaro' : u.id === 'u4' ? 'Centro' : 'Sturla'
+    }));
+  } catch (e) {
+    return mockLeaderboards;
+  }
 }
 
 export async function addActivity(data: {

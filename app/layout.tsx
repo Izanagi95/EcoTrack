@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Navigation from '@/components/Navigation';
+import { ThemeProvider } from '@/components/ThemeProvider';
 
 export const metadata: Metadata = {
   title: 'EcoTrack - Your Sustainability Journey',
@@ -15,10 +16,12 @@ export default function RootLayout({
   return (
     <html lang="it">
       <body>
-        <div className="main-container">
-          {children}
-          <Navigation />
-        </div>
+        <ThemeProvider>
+          <div className="main-container">
+            {children}
+            <Navigation />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

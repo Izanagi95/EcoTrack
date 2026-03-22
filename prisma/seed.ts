@@ -8,10 +8,23 @@ const prisma = new PrismaClient();
 async function main() {
   console.log('Start seeding...');
 
+  // Create a team
+  const group = await prisma.team.upsert({
+    where: { id: 'team-1' },
+    update: {},
+    create: {
+      id: 'team-1',
+      name: 'Green Warriors',
+      description: 'Il gruppo più attivo di Genova! 🌿',
+      points: 5850,
+    },
+  });
+  console.log(`Created team: ${group.name}`);
+
   // Create current user
   const user = await prisma.user.upsert({
     where: { id: currentUser.id },
-    update: {},
+    update: { teamId: 'team-1' },
     create: {
       id: currentUser.id,
       name: currentUser.name,
@@ -22,6 +35,7 @@ async function main() {
       wasteRecycledKg: currentUser.stats.wasteRecycledKg,
       energySavedKwh: currentUser.stats.energySavedKwh,
       streakDays: currentUser.stats.streakDays,
+      teamId: 'team-1',
     },
   });
   console.log(`Created user with id: ${user.id}`);
@@ -36,12 +50,13 @@ async function main() {
     if (uid !== currentUser.id) {
       await prisma.user.upsert({
         where: { id: uid },
-        update: {},
+        update: { teamId: (uid === 'u2' || uid === 'u3') ? 'team-1' : null },
         create: {
           id: uid,
           name: uid === 'u2' ? 'Giulia V.' : uid === 'u3' ? 'Andrea B.' : `User ${uid}`,
           avatarUrl: `https://i.pravatar.cc/150?u=${uid}`,
           ecoScore: Math.floor(Math.random() * 2000) + 500,
+          teamId: (uid === 'u2' || uid === 'u3') ? 'team-1' : null,
         },
       });
       console.log(`Created user with id: ${uid}`);

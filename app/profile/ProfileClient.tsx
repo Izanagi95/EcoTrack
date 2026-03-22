@@ -2,11 +2,15 @@
 
 import { useState, useEffect } from 'react';
 import styles from './Profile.module.css';
+import { getCO2Equivalent } from '@/lib/helpers';
+import { useTheme } from '@/components/ThemeProvider';
 
 export default function ProfileClient({ currentUser, userActivities }: any) {
+  const { theme, toggle } = useTheme();
   const [isMounted, setIsMounted] = useState(false);
 
   const [showLevels, setShowLevels] = useState(false);
+  const [userTeam, setUserTeam] = useState(currentUser.team);
 
   useEffect(() => {
     setIsMounted(true);
@@ -29,18 +33,68 @@ export default function ProfileClient({ currentUser, userActivities }: any) {
       </header>
 
       <section className={`${styles.profileCard} animate-fade-in`}>
-        <div className={styles.avatarWrapper}>
-          <img src={currentUser.avatarUrl} alt={currentUser.name} className={styles.avatar} />
+        <div className={styles.profileHeader}>
+          <div className={styles.avatarWrapper}>
+            <img src={currentUser.avatarUrl} alt={currentUser.name} className={styles.avatar} />
+          </div>
+          <div className={styles.mainInfo}>
+            <h2 className={styles.name}>{currentUser.name}</h2>
+            <div className={styles.badgeRow}>
+              <span className={styles.levelBadge}>{currentUser.level}</span>
+              <div className={styles.miniBadges}>
+                <span className={styles.miniBadge} title="Re del Riciclo">🏆</span>
+                <span className={styles.miniBadge} title="Zero Carbon Commuter">🚶</span>
+              </div>
+            </div>
+          </div>
+          <div className={styles.scoreHighlight}>
+            <span className={styles.scoreLabel}>EcoScore</span>
+            <span className={styles.scoreValue}>{currentUser.ecoScore}</span>
+            <span className={styles.scoreUnit}>pt</span>
+          </div>
         </div>
-        <h2 className={styles.name}>{currentUser.name}</h2>
-        <span className={styles.levelBadge}>{currentUser.level}</span>
-        
-        <button 
-          className={`${styles.viewLevelsBtn} btn-glass btn animate-fade-in animate-delay-1`}
-          onClick={() => setShowLevels(!showLevels)}
-        >
-          {showLevels ? 'Chiudi Livelli' : 'Scopri tutti i Livelli ➔'}
-        </button>
+
+        <div className={styles.profileActions}>
+          <button 
+            className={`${styles.viewLevelsBtn} btn-glass btn`}
+            onClick={() => setShowLevels(!showLevels)}
+          >
+            {showLevels ? 'Chiudi Livelli' : 'Progressione Livelli ➔'}
+          </button>
+          
+          <div className={styles.teamAction}>
+            {userTeam ? (
+              <div className={styles.teamCard}>
+                <div className={styles.teamHeader}>
+                  <span className={styles.teamIcon}>👥</span>
+                  <div className={styles.teamInfo}>
+                    <span className={styles.teamName}>{userTeam.name}</span>
+                    <span className={styles.teamRank}>#12 in Classifica</span>
+                  </div>
+                </div>
+                <div className={styles.teamStats}>
+                  <span>{userTeam.points} pt totali</span>
+                  <button 
+                    className={styles.leaveTeamBtn}
+                    onClick={() => {
+                      // Simple toggle for demo or custom UI
+                      setUserTeam(null);
+                    }}
+                  >
+                    Abbandona
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <div className={styles.noTeam}>
+                <p>Non fai ancora parte di un team.</p>
+                <button className={`${styles.createTeamBtn} btn-premium`} onClick={() => setUserTeam({ name: 'Nuovo Team', points: 0 })}>
+                  👥 Crea il Tuo Team
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
 
         {showLevels && (
           <div className={`${styles.levelsLevels} animate-fade-in`}>
@@ -59,11 +113,6 @@ export default function ProfileClient({ currentUser, userActivities }: any) {
             ))}
           </div>
         )}
-        
-        <div className={`${styles.ecoScoreBox} animate-fade-in animate-delay-2`}>
-          <p className={styles.ecoScoreLabel}>EcoScore Totale</p>
-          <p className={styles.ecoScoreValue}>{currentUser.ecoScore} <span>pt</span></p>
-        </div>
       </section>
 
 
@@ -72,6 +121,7 @@ export default function ProfileClient({ currentUser, userActivities }: any) {
           <span className={styles.statIcon}>🌱</span>
           <h3 className={styles.statValue}>{currentUser.stats.co2SavedKg} kg</h3>
           <p className={styles.statLabel}>CO₂ Risparmiata</p>
+          <span className={styles.co2Equiv}>{getCO2Equivalent(currentUser.stats.co2SavedKg)}</span>
         </div>
         <div className={styles.statCard}>
           <span className={styles.statIcon}>♻️</span>
@@ -122,11 +172,46 @@ export default function ProfileClient({ currentUser, userActivities }: any) {
       </section>
 
       <section className={styles.achievements}>
-        <h3 className={styles.sectionTitle}>Badge Recenti</h3>
-        <div className={styles.badgeList}>
-          <div className={`${styles.badge} glass`}>🏆 Re del Riciclo</div>
-          <div className={`${styles.badge} glass`}>🚶 Zero Carbon Commuter</div>
+        <h3 className={styles.sectionTitle}>I Tuoi Badge</h3>
+        <div className={styles.badgeGrid}>
+          <div className={`${styles.badgeFull} glass`}>
+            <span className={styles.badgeIcon}>🏆</span>
+            <div className={styles.badgeInfo}>
+              <strong>Re del Riciclo</strong>
+              <span>10 attività di riciclo completate</span>
+            </div>
+          </div>
+          <div className={`${styles.badgeFull} glass`}>
+            <span className={styles.badgeIcon}>🚶</span>
+            <div className={styles.badgeInfo}>
+              <strong>Zero Carbon Commuter</strong>
+              <span>5 giorni senza auto</span>
+            </div>
+          </div>
+          <div className={`${styles.badgeFull} ${styles.locked} glass`}>
+            <span className={styles.badgeIcon}>⚡</span>
+            <div className={styles.badgeInfo}>
+              <strong>Energy Ninja</strong>
+              <span>Riduci i consumi del 10%</span>
+            </div>
+          </div>
         </div>
+      </section>
+      <section className={`${styles.themeSection} glass animate-fade-in`}>
+        <div className={styles.themeInfo}>
+          <span style={{ fontSize: '1.5rem' }}>{theme === 'dark' ? '🌙' : '☀️'}</span>
+          <div>
+            <h4>{theme === 'dark' ? 'Modalità Scura' : 'Modalità Chiara'}</h4>
+            <p>Personalizza l’aspetto dell’app</p>
+          </div>
+        </div>
+        <button
+          className={`${styles.themeToggle} ${theme === 'dark' ? styles.themeDark : ''}`}
+          onClick={toggle}
+          aria-label="Cambia tema"
+        >
+          <span className={styles.themeKnob} />
+        </button>
       </section>
     </main>
   );

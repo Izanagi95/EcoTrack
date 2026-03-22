@@ -5,6 +5,15 @@
   gap: 1.5rem;
 }
 
+/* Dashboard-specific header override: title + period switcher on same row */
+.container :global(.page-header) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 /* TIER 0: SUMMARY ROW */
 .summaryRow {
   display: grid;
@@ -165,30 +174,82 @@
 .legTransport::before { background: #10b981; }
 .legCircular::before { background: #f59e0b; }
 
-.stackedChartLarge {
+.chartAreaWrapper {
+  display: flex;
+  gap: 1rem;
+  height: 180px;
+  align-items: flex-start;
+  padding-bottom: 0.5rem;
+}
+
+.yAxis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px; /* Match chartHeight in JSX */
+  padding-bottom: 25px; /* Alignment with bars base */
+  min-width: 45px;
+}
+
+.yAxis span {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-align: right;
+  line-height: 1;
+}
+
+.chartArea {
+  flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  height: 220px;
-  padding: 0 1rem;
+  height: 180px;
+  border-bottom: 1px solid rgba(var(--primary-rgb), 0.1);
+  padding-bottom: 25px;
+  position: relative;
 }
 
-.barGroupLarge {
+/* Background grid lines */
+.chartArea::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  background-image: linear-gradient(rgba(var(--primary-rgb), 0.05) 1px, transparent 1px);
+  background-size: 100% 75px; /* Two grid lines: 0, 50%, 100% */
+  pointer-events: none;
+}
+
+.barGroup {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
-  flex: 1;
+  gap: 0.5rem;
+  height: 100%;
+  justify-content: flex-end;
+  min-width: 0;
 }
 
-.barStackImpact {
+.barStack {
   display: flex;
   flex-direction: column-reverse;
-  width: 32px;
-  border-radius: 6px;
+  width: 100%;
+  max-width: 40px;
+  border-radius: 8px;
   overflow: hidden;
   position: relative;
-  transition: all 0.3s;
+  transition: transform 0.2s;
+  cursor: pointer;
+  min-height: 4px;
+}
+
+.barStack:hover {
+  transform: scaleY(1.03);
+  transform-origin: bottom;
 }
 
 .segmentEnergy { background: #3b82f6; }
@@ -197,35 +258,41 @@
 
 .segmentEnergy, .segmentTransport, .segmentCircular {
   width: 100%;
-  transition: all 0.2s;
-  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 0;
 }
 
 .barTooltip {
   position: absolute;
-  top: -30px;
+  top: -28px;
   left: 50%;
   transform: translateX(-50%);
   background: var(--text-primary);
   color: white;
-  padding: 2px 6px;
-  border-radius: 4px;
+  padding: 3px 7px;
+  border-radius: 5px;
   font-size: 0.65rem;
   font-weight: 800;
   opacity: 0;
-  transition: opacity 0.2s;
+  transition: opacity 0.15s;
   pointer-events: none;
   white-space: nowrap;
+  z-index: 10;
 }
 
-.barStackImpact:hover .barTooltip {
+.barStack:hover .barTooltip {
   opacity: 1;
 }
 
-.dayLabelLarge {
-  font-size: 0.75rem;
+.barLabel {
+  font-size: 0.7rem;
   font-weight: 700;
   color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  text-align: center;
 }
 
 /* TIER 2: STATS BAR */
@@ -285,51 +352,105 @@
 
 .stepChart {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
   height: 120px;
   margin-top: 1rem;
+  gap: 0.25rem;
+  padding: 0 0.25rem;
 }
 
 .stepBarGroup {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   flex: 1;
+  min-width: 0;
 }
 
-.stepBar {
-  width: 12px;
-  background: var(--primary);
+.barSingle {
+  width: 100%;
+  max-width: 24px;
+  background: linear-gradient(180deg, var(--primary), color-mix(in srgb, var(--primary) 70%, transparent));
   border-radius: 4px 4px 0 0;
   position: relative;
-  transition: all 0.3s;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  min-height: 4px;
+}
+
+.stepBar:hover {
+  filter: brightness(1.15);
 }
 
 .stepTooltip {
   position: absolute;
-  top: -20px;
+  top: -22px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 0.6rem;
   font-weight: 700;
+  background: var(--text-primary);
+  color: white;
+  padding: 2px 5px;
+  border-radius: 4px;
   opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 10;
+  transition: opacity 0.15s;
 }
 
-.stepBar:hover .stepTooltip { opacity: 1; }
+.barSingle:hover .stepTooltip { opacity: 1; }
 
 .stepDayLabel {
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   font-weight: 700;
   color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  text-align: center;
 }
 
 .miniTrends {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 0.75rem;
+  gap: 1rem;
+}
+
+.microChartWrapper {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.microYAxis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 55px;
+  padding-bottom: 15px;
+  min-width: 25px;
+}
+
+.microYAxis span {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-align: right;
+}
+
+.microChart {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 70px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(var(--primary-rgb), 0.05);
 }
 
 .trendBubbles {
@@ -362,15 +483,6 @@
 .up strong { color: #ef4444; }
 .down strong { color: #10b981; }
 
-.microChart {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  height: 80px;
-  padding-top: 1rem;
-  border-top: 1px dashed var(--border);
-}
-
 .microBarGroup {
   display: flex;
   flex-direction: column;
@@ -401,6 +513,138 @@
   font-weight: 700;
   color: var(--text-secondary);
 }
+
+/* BUDGET VIEW (DAILY) */
+.budgetView {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.donutContainer {
+  width: 100px;
+  height: 100px;
+}
+
+.donut {
+  width: 100%;
+  height: 100%;
+}
+
+.donutRing {
+  fill: none;
+  stroke: rgba(var(--primary-rgb), 0.1);
+  stroke-width: 3;
+}
+
+.donutSegment {
+  fill: none;
+  stroke: var(--primary);
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke-dasharray 1s ease-out;
+}
+
+.donutText {
+  font-family: var(--font-sans);
+  font-size: 0.5rem;
+  font-weight: 900;
+  fill: var(--text-primary);
+  text-anchor: middle;
+}
+
+.budgetText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.budgetText strong {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--primary);
+}
+
+.budgetText span {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* FASCE VIEW (WEEKLY) */
+.fasceView {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.fasceItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fasceLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fasceLabel span {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.fasceLegend {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.fasceLegend span {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+.fasceLegend span:nth-child(1) { background: #3b82f6; }
+.fasceLegend span:nth-child(2) { background: #10b981; }
+.fasceLegend span:nth-child(3) { background: #f59e0b; }
+
+.fasceBar {
+  display: flex;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: rgba(var(--primary-rgb), 0.05);
+}
+
+.fasceBar div {
+  height: 100%;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fasceHint {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0.25rem;
+}
+
+.consumptionNote {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-top: 1rem;
+  opacity: 0.8;
+  border-top: 1px solid rgba(var(--primary-rgb), 0.05);
+  padding-top: 0.75rem;
+}
+
 
 /* TIER 4: BOTTOM GRID (HISTORY & SUGGESTIONS) */
 .bottomGrid {
@@ -498,8 +742,51 @@
 }
 .suggLink:hover { color: var(--primary); }
 
+/* PERIOD SWITCHER */
+.periodSwitcher {
+  display: flex;
+  gap: 0.35rem;
+  background: rgba(var(--primary-rgb), 0.07);
+  padding: 0.3rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+}
+
+.periodBtn {
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  border: none;
+  background: transparent;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.periodBtn:hover {
+  color: var(--text-primary);
+  background: rgba(var(--primary-rgb), 0.08);
+}
+
+.periodBtnActive {
+  background: var(--primary) !important;
+  color: white !important;
+  box-shadow: 0 2px 8px rgba(var(--primary-rgb), 0.35);
+}
+
 @media (max-width: 1024px) {
   .summaryRow, .secondaryGrid, .bottomGrid {
     grid-template-columns: 1fr;
   }
+}
+
+.co2Equiv {
+  font-size: 0.75rem;
+  color: var(--primary);
+  margin-top: 0.25rem;
+  font-weight: 700;
+  display: block;
+  white-space: nowrap;
 }

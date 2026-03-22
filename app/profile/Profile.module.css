@@ -100,6 +100,219 @@
   background: var(--primary);
 }
 
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.mainInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.badgeRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.miniBadges {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.miniBadge {
+  font-size: 1.2rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.scoreHighlight {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.scoreLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  opacity: 0.9;
+}
+
+.scoreValue {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.scoreUnit {
+  font-size: 0.8rem;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.profileActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.teamAction {
+  flex-shrink: 0;
+  min-width: 220px;
+}
+
+.teamCard {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.teamHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.teamIcon {
+  font-size: 1.5rem;
+  background: rgba(var(--primary-rgb), 0.2);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.teamInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.teamName {
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.teamRank {
+  font-size: 0.7rem;
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.teamStats {
+  font-size: 0.75rem;
+  font-weight: 700;
+  opacity: 0.9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 0.5rem;
+}
+
+.leaveTeamBtn {
+  background: rgba(255, 59, 48, 0.2);
+  border: 1px solid rgba(255, 59, 48, 0.3);
+  color: #ff3b30;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.leaveTeamBtn:hover {
+  background: #ff3b30;
+  color: white;
+}
+
+.noTeam {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.noTeam p {
+  font-size: 0.7rem;
+  font-weight: 600;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.createTeamBtn {
+  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
+}
+
+.badgeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.badgeFull {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: rgba(var(--primary-rgb), 0.03);
+}
+
+.badgeIcon {
+  font-size: 2rem;
+  background: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+}
+
+.badgeInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.badgeInfo strong {
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.badgeInfo span {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.locked {
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
 .ecoScoreLabel {
   font-size: 0.8rem;
   font-weight: 800;
@@ -318,3 +531,87 @@
   }
 }
 
+/* Theme Toggle Section */
+.themeSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5rem 2rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+.themeInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.themeInfo h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.15rem;
+}
+
+.themeInfo p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.themeToggle {
+  width: 56px;
+  height: 30px;
+  border-radius: var(--radius-full);
+  background: #e2e8f0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.themeToggle.themeDark {
+  background: var(--primary);
+}
+
+.themeKnob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-full);
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+}
+
+.themeToggle.themeDark .themeKnob {
+  transform: translateX(26px);
+}
+
+.co2Equiv {
+  font-size: 0.7rem;
+  color: var(--primary);
+  font-weight: 700;
+  margin-top: 0.3rem;
+  display: block;
+}
+
+.co2Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.15rem;
+}
+
+.co2EquivSmall {
+  font-size: 0.68rem;
+  color: var(--primary);
+  font-weight: 700;
+}

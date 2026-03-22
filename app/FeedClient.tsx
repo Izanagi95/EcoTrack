@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from './page.module.css';
+import { getCO2Equivalent } from '@/lib/helpers';
 
 const getTypeConfig = (type: string) => {
   switch (type) {
@@ -87,7 +88,12 @@ export default function FeedClient({ activities, suggestedUsers }: any) {
                 <div className={styles.impactBadge}>
                   <span className={styles.points}>+{activity.points} pt</span>
                   {activity.co2SavedValue > 0 && (
-                    <span className={styles.co2}>• -{activity.co2SavedValue}kg CO₂</span>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.15rem' }}>
+                      <span className={styles.co2}>• -{activity.co2SavedValue}kg CO₂</span>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--primary)', fontWeight: 700 }}>
+                        {getCO2Equivalent(activity.co2SavedValue)}
+                      </span>
+                    </div>
                   )}
                 </div>
               </div>

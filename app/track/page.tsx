@@ -6,7 +6,7 @@ import styles from './Track.module.css';
 
 import { addActivity, addConsumption } from '@/lib/actions';
 import { analyzeImageWithAI } from '@/lib/gemini';
-
+import { getCO2Equivalent } from '@/lib/helpers';
 
 type TrackingType = 'energy' | 'recycling' | 'volunteer' | 'circular' | 'mobility' | null;
 type VolunteerMode = 'manual' | 'scan' | 'show';
@@ -399,7 +399,12 @@ function TrackContent() {
                       </div>
                       <div className={styles.aiStat}>
                         <span>Risparmio</span>
-                        <strong>-{aiResult.estimatedCo2Saved}kg CO₂</strong>
+                        <div style={{ display: 'flex', flexDirection: 'column' }}>
+                          <strong>-{aiResult.estimatedCo2Saved}kg CO₂</strong>
+                          <span style={{ fontSize: '0.75rem', color: 'var(--primary)', fontWeight: 700 }}>
+                            {getCO2Equivalent(aiResult.estimatedCo2Saved)}
+                          </span>
+                        </div>
                       </div>
                     </div>
                     <div className={styles.aiInsights}>
