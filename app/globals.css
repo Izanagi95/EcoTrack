@@ -226,4 +226,18 @@ button, .btn {
 .animate-delay-2 { animation-delay: 0.2s; }
 .animate-delay-3 { animation-delay: 0.3s; }
 
+/* ── Tiny Screens (≤380px) ───────────────────────────────── */
+@media (max-width: 380px) {
+  .page-header {
+    padding: 1.5rem 1rem 1rem;
+    margin-bottom: 1rem;
+  }
 
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  body {
+    font-size: 0.9rem;
+  }
+}

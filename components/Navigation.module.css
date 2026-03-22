@@ -13,10 +13,8 @@
   justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  .navContainer {
-    background: rgba(30, 41, 59, 0.85);
-  }
+:global(html.dark) .navContainer {
+  background: rgba(30, 41, 59, 0.85);
 }
 
 .brandArea {
@@ -75,6 +73,20 @@
 
 .active .icon {
   transform: translateY(-3px) scale(1.1);
+}
+
+@media (max-width: 380px) {
+  .label {
+    display: none;
+  }
+
+  .icon {
+    font-size: 1.6rem;
+  }
+
+  .navContainer {
+    height: 64px;
+  }
 }
 
 @media (min-width: 768px) {

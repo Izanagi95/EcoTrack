@@ -791,3 +791,43 @@
   white-space: nowrap;
 }
 
+
+/* ── Tiny Screens (≤380px) ───────────────────────────────── */
+@media (max-width: 380px) {
+  .summaryRow {
+    grid-template-columns: 1fr;
+  }
+
+  .compactCard {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .compactValue {
+    font-size: 1.5rem;
+  }
+
+  .statsHighlight {
+    gap: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  .statMini {
+    gap: 0.5rem;
+  }
+
+  .statIcon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+  }
+
+  .statVal {
+    font-size: 1rem;
+  }
+
+  .co2Equiv {
+    white-space: normal;
+    font-size: 0.65rem;
+  }
+}
