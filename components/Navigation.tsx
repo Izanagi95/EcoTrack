@@ -19,14 +19,22 @@ export default function Navigation() {
 
   return (
     <nav className={styles.navContainer}>
+      <div className={styles.brandArea}>
+        <div className={styles.logo}>🌱</div>
+        <span className={styles.appName}>EcoTrack</span>
+      </div>
+      
       <div className={styles.navMenu}>
         {navItems.map((item) => {
           const isActive = pathname === item.path;
+          // Hide Decalogo on mobile bottom bar to keep it 5 items
+          const isMobileHidden = item.name === 'Decalogo';
+          
           return (
             <Link 
               key={item.name} 
               href={item.path}
-              className={`${styles.navItem} ${isActive ? styles.active : ''}`}
+              className={`${styles.navItem} ${isActive ? styles.active : ''} ${isMobileHidden ? styles.mobileHidden : ''}`}
             >
               <span className={styles.icon}>{item.icon}</span>
               <span className={styles.label}>{item.name}</span>
@@ -37,3 +45,4 @@ export default function Navigation() {
     </nav>
   );
 }
+

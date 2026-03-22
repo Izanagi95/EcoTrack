@@ -37,24 +37,21 @@ export default function FeedClient({ activities, suggestedUsers }: any) {
   return (
     <main className={styles.container}>
       <header className="page-header glass">
-        <h1 className="page-title">Community Feed</h1>
+        <h1 className="page-title page-title-gradient">Community Feed</h1>
       </header>
 
       <div className={styles.feed}>
         <div 
-          className={`${styles.createPostCard} glass animate-fade-in`} 
+          className={`${styles.createPostCard} animate-fade-in`} 
           onClick={() => router.push('/track')}
         >
           <div className={styles.createAvatar}>+</div>
           <div className={styles.createInputMock}>
-            Condividi una nuova azione eco...
+            Condividi una nuova azione ecosostenibile...
           </div>
         </div>
 
         {activities.map((activity: any, index: number) => {
-
-
-
           const typeConfig = getTypeConfig(activity.type);
           const isLiked = likedPosts.has(activity.id);
 
@@ -62,7 +59,7 @@ export default function FeedClient({ activities, suggestedUsers }: any) {
             <article 
               key={activity.id} 
               className={`${styles.post} animate-fade-in`}
-              style={{ animationDelay: `${index * 0.1}s` }}
+              style={{ animationDelay: `${(index + 1) * 0.1}s` }}
             >
               <div className={styles.postHeader}>
                 <div className={styles.userInfo}>
@@ -73,8 +70,6 @@ export default function FeedClient({ activities, suggestedUsers }: any) {
                   />
                   <div className={styles.userMeta}>
                     <h3 className={styles.userName}>{activity.user?.name || 'Utente Eroe'}</h3>
-
-
                     <span className={styles.postTime}>
                       {isMounted ? new Date(activity.date).toLocaleDateString('it-IT', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : '...'}
                     </span>
@@ -108,7 +103,7 @@ export default function FeedClient({ activities, suggestedUsers }: any) {
                   className={`${styles.actionBtn} ${isLiked ? styles.liked : ''}`}
                   onClick={() => toggleLike(activity.id)}
                 >
-                  {isLiked ? '💚 Apprezzato' : '🤍 Apprezza'}
+                  {isLiked ? '❤️ Apprezzato' : '🤍 Apprezza'}
                 </button>
                 <button className={styles.actionBtn}>
                   💬 Commenta
@@ -118,8 +113,9 @@ export default function FeedClient({ activities, suggestedUsers }: any) {
                 </button>
               </div>
             </article>
-          )
+          );
         })}
+
       </div>
     </main>
   );

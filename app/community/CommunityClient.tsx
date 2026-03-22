@@ -45,11 +45,12 @@ export default function CommunityClient({ leaderboards, communityEvents }: any) 
   return (
     <main className={styles.container}>
       <header className="page-header glass">
-        <h1 className="page-title">Community & Sfide</h1>
+        <h1 className="page-title page-title-gradient">Community & Sfide</h1>
       </header>
 
       {/* Podium Section */}
-      <section className={styles.podiumSection}>
+      <section className={`${styles.podiumSection} animate-fade-in`}>
+
         <div className={styles.podium}>
           {podium[1] && (
             <div className={`${styles.podiumPlace} ${styles.second}`}>

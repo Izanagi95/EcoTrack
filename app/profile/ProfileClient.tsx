@@ -25,10 +25,10 @@ export default function ProfileClient({ currentUser, userActivities }: any) {
   return (
     <main className={styles.container}>
       <header className="page-header glass">
-        <h1 className="page-title">Il Tuo Profilo</h1>
+        <h1 className="page-title page-title-gradient">Il Tuo Profilo</h1>
       </header>
 
-      <section className={styles.profileCard}>
+      <section className={`${styles.profileCard} animate-fade-in`}>
         <div className={styles.avatarWrapper}>
           <img src={currentUser.avatarUrl} alt={currentUser.name} className={styles.avatar} />
         </div>
@@ -36,7 +36,7 @@ export default function ProfileClient({ currentUser, userActivities }: any) {
         <span className={styles.levelBadge}>{currentUser.level}</span>
         
         <button 
-          className={`${styles.viewLevelsBtn} btn-glass btn`}
+          className={`${styles.viewLevelsBtn} btn-glass btn animate-fade-in animate-delay-1`}
           onClick={() => setShowLevels(!showLevels)}
         >
           {showLevels ? 'Chiudi Livelli' : 'Scopri tutti i Livelli ➔'}
@@ -60,14 +60,14 @@ export default function ProfileClient({ currentUser, userActivities }: any) {
           </div>
         )}
         
-        <div className={styles.ecoScoreBox}>
+        <div className={`${styles.ecoScoreBox} animate-fade-in animate-delay-2`}>
           <p className={styles.ecoScoreLabel}>EcoScore Totale</p>
           <p className={styles.ecoScoreValue}>{currentUser.ecoScore} <span>pt</span></p>
         </div>
       </section>
 
 
-      <section className={styles.statsGrid}>
+      <section className={`${styles.statsGrid} animate-fade-in animate-delay-2`}>
         <div className={styles.statCard}>
           <span className={styles.statIcon}>🌱</span>
           <h3 className={styles.statValue}>{currentUser.stats.co2SavedKg} kg</h3>
@@ -83,25 +83,41 @@ export default function ProfileClient({ currentUser, userActivities }: any) {
       <section className={styles.historySection}>
         <h3 className={styles.sectionTitle}>Storico Attività</h3>
         <div className={styles.activityList}>
-          {userActivities.map((activity: any) => (
-            <div key={activity.id} className={`${styles.activityItem} glass animate-fade-in`}>
-              <div className={styles.activityIcon}>
-                {activity.type === 'energy' ? '⚡' : activity.type === 'recycling' ? '♻️' : '🤝'}
-              </div>
-              <div className={styles.activityInfo}>
-                <h4 className={styles.activityTitle}>{activity.title}</h4>
-                <p className={styles.activityDate}>
-                  {isMounted ? new Date(activity.date).toLocaleDateString('it-IT') : '...'}
-                </p>
-              </div>
-              <div className={styles.activityImpact}>
-                <span className={styles.points}>+{activity.points} pt</span>
-                {activity.co2SavedValue && (
-                  <span className={styles.co2}>-{activity.co2SavedValue}kg CO₂</span>
-                )}
-              </div>
-            </div>
-          ))}
+          {userActivities.map((activity: any, i: number) => {
+             const getIcon = (type: string) => {
+               switch(type) {
+                 case 'energy': return '⚡';
+                 case 'recycling': return '♻️';
+                 case 'volunteer': return '🤝';
+                 case 'circular': return '🔄';
+                 case 'mobility': return '🚲';
+                 default: return '🌱';
+               }
+             };
+             return (
+               <div 
+                 key={activity.id} 
+                 className={`${styles.activityItem} glass animate-fade-in`}
+                 style={{ animationDelay: `${(i + 3) * 0.1}s` }}
+               >
+                 <div className={styles.activityIcon}>
+                   {getIcon(activity.type)}
+                 </div>
+                 <div className={styles.activityInfo}>
+                   <h4 className={styles.activityTitle}>{activity.title}</h4>
+                   <p className={styles.activityDate}>
+                     {isMounted ? new Date(activity.date).toLocaleDateString('it-IT') : '...'}
+                   </p>
+                 </div>
+                 <div className={styles.activityImpact}>
+                   <span className={styles.points}>+{activity.points} pt</span>
+                   {activity.co2SavedValue > 0 && (
+                     <span className={styles.co2}>-{activity.co2SavedValue}kg CO₂</span>
+                   )}
+                 </div>
+               </div>
+             );
+          })}
         </div>
       </section>
 

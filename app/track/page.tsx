@@ -425,12 +425,12 @@ function TrackContent() {
       ) : (
         <div key="list">
           <header className="page-header glass">
-            <h1 className="page-title">Traccia Attività</h1>
+            <h1 className="page-title page-title-gradient">Traccia Attività</h1>
           </header>
           
           <section className={styles.content}>
-            <p className={styles.subtitle}>
-              Registra una nuova azione sostenibile per aumentare il tuo EcoScore.
+            <p className={`${styles.subtitle} animate-fade-in animate-delay-1`}>
+              Registra una nuova azione sostenibile per aumentare il tuo EcoScore e migliorare l'ambiente.
             </p>
 
             <div className={styles.optionsList}>
@@ -439,7 +439,7 @@ function TrackContent() {
                   key={opt.id} 
                   onClick={() => setSelectedType(opt.id)}
                   className={`${styles.optionCard} animate-fade-in`} 
-                  style={{ animationDelay: `${i * 0.1}s` }}
+                  style={{ animationDelay: `${(i + 2) * 0.1}s` }}
                 >
                   <div className={styles.iconBox}>{opt.icon}</div>
                   <div className={styles.optText}>
@@ -451,6 +451,7 @@ function TrackContent() {
               ))}
             </div>
           </section>
+
         </div>
       )}
     </main>

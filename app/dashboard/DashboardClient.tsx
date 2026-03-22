@@ -19,9 +19,18 @@ export default function DashboardClient({ currentUser, userActivities, userConsu
   const nextLevelScore = 2000;
   const progress = (currentUser.ecoScore / nextLevelScore) * 100;
 
-  const filteredActivities = userActivities.filter(
-    (act: any) => filter === 'all' || act.type === filter
-  );
+  const filteredActivities = useMemo(() => {
+    const oneWeekAgo = new Date();
+    oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+    oneWeekAgo.setHours(0, 0, 0, 0);
+
+    return userActivities.filter((act: any) => {
+      const actDate = new Date(act.date);
+      const matchesFilter = filter === 'all' || act.type === filter;
+      const isRecent = actDate >= oneWeekAgo;
+      return matchesFilter && isRecent;
+    });
+  }, [userActivities, filter]);
 
   // Group and process consumptions for trends
   const consumptionTrends = useMemo(() => {
@@ -226,7 +235,7 @@ export default function DashboardClient({ currentUser, userActivities, userConsu
         <div className={styles.bottomGrid}>
           <section className={`${styles.historyCard} glass animate-fade-in`}>
             <div className={styles.areaHeader}>
-              <h3 className={styles.areaTitle}>📋 Storico Attività</h3>
+              <h3 className={styles.areaTitle}>📋 Storico Settimanale</h3>
               <div className={styles.filterPills}>
                 {['all', 'energy', 'recycling', 'volunteer'].map((f: any) => (
                   <button 
