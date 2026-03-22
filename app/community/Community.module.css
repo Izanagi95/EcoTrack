@@ -150,12 +150,10 @@
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  .eventCard {
+:global(html.dark) .eventCard {
     background: rgba(30, 41, 59, 0.65);
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
-}
 
 .eventCard:hover {
   transform: translateY(-5px);
@@ -293,12 +291,10 @@
   gap: 1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  .challengeCard {
+:global(html.dark) .challengeCard {
     background: rgba(30, 41, 59, 0.65);
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
-}
 
 .challengeCard:hover {
   transform: translateY(-5px);
@@ -527,12 +523,10 @@
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-@media (prefers-color-scheme: dark) {
-  .quizModal {
+:global(html.dark) .quizModal {
     background: rgba(30, 41, 59, 0.85);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
-}
 
 .quizProgress {
   font-size: 0.9rem;
@@ -571,11 +565,9 @@
   text-align: left;
 }
 
-@media (prefers-color-scheme: dark) {
-  .quizOptionBtn {
+:global(html.dark) .quizOptionBtn {
     background: rgba(15, 23, 42, 0.5);
   }
-}
 
 .quizOptionBtn:hover {
   background: rgba(var(--primary-rgb), 0.1);
@@ -632,12 +624,10 @@
   transition: all 0.2s;
 }
 
-@media (prefers-color-scheme: dark) {
-  .historyItem {
+:global(html.dark) .historyItem {
     background: rgba(30, 41, 59, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
-}
 
 .historyItem:hover {
   transform: translateX(4px);
@@ -701,11 +691,9 @@
   transition: all 0.3s;
 }
 
-@media (prefers-color-scheme: dark) {
-  .networkBanner {
+:global(html.dark) .networkBanner {
     border: 1px solid rgba(255, 255, 255, 0.05);
   }
-}
 
 .networkBanner:hover {
   transform: translateY(-3px);
