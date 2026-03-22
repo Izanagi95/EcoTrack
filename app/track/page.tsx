@@ -104,7 +104,7 @@ function TrackContent() {
     let points = 50;
     let co2 = 5.0;
     let title = currentOption.title;
-    let desc = 'Azione registrata tramite app EcoTrack.';
+    let desc = 'Azione registrata tramite app Piantala!.';
     
     if (selectedType === 'energy') {
       if (!aiResult) {

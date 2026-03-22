@@ -18,4 +18,4 @@ L'introduzione di una competizione cooperativa basata sul quartiere di appartene
 - **Riuso Locale**: Incremento delle vendite/scambi nei mercatini locali dell'usato (economia circolare del quartiere).
 
 ## Conclusione
-Il passaggio dall'individuale al collettivo è la chiave per scalare l'impatto di EcoTrack. La gamification territoriale trasforma la sostenibilità da dovere etico a orgoglio civile locale.
+Il passaggio dall'individuale al collettivo è la chiave per scalare l'impatto di Piantala!. La gamification territoriale trasforma la sostenibilità da dovere etico a orgoglio civile locale.

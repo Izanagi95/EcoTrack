@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 import { ThemeProvider } from '@/components/ThemeProvider';
 
 export const metadata: Metadata = {
-  title: 'EcoTrack - Your Sustainability Journey',
+  title: 'Piantala! - Il Tuo Viaggio Verso la Sostenibilità',
   description: 'Traccia, condividi e ricevi incentivi per le tue azioni sostenibili.',
 };
 

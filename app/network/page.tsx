@@ -1,7 +1,8 @@
+import type { Metadata } from 'next';
 import NetworkClient from './NetworkClient';
 
-export const metadata = {
-  title: 'Il nostro Network - EcoTrack',
+export const metadata: Metadata = {
+  title: 'Il nostro Network - Piantala!',
   description: 'Scopri le associazioni e i partner attivi sul territorio che supportano le nostre sfide di sostenibilità.',
 };
 

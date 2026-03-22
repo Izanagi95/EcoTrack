@@ -1,4 +1,4 @@
-# Strategia di Gamification e Engagement: Rendere EcoTrack "Divertente"
+# Strategia di Gamification e Engagement: Rendere Piantala! "Divertente"
 
 Per trasformare un'app di utility in un'esperienza coinvolgente, dobbiamo passare dal semplice tracking alla **gratificazione psicologica**. Ecco le proposte:
 

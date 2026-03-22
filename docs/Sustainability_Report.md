@@ -1,7 +1,7 @@
-# Rapporto sulla Sostenibilità: EcoTrack
+# Rapporto sulla Sostenibilità: Piantala!
 
 ## Sintesi
-EcoTrack è una piattaforma innovativa progettata per sensibilizzare gli utenti verso comportamenti quotidiani sostenibili. Attraverso l'uso dell'intelligenza artificiale (IA) e di sistemi di gamification (EcoScore), l'app trasforma l'azione individuale in un impatto collettivo misurabile.
+Piantala! è una piattaforma innovativa progettata per sensibilizzare gli utenti verso comportamenti quotidiani sostenibili. Attraverso l'uso dell'intelligenza artificiale (IA) e di sistemi di gamification (EcoScore), l'app trasforma l'azione individuale in un impatto collettivo misurabile.
 
 ## Stato Attuale delle Funzionalità
 Attualmente, la piattaforma offre diverse vie per la riduzione dell'impatto ambientale:
@@ -12,7 +12,7 @@ Attualmente, la piattaforma offre diverse vie per la riduzione dell'impatto ambi
 4.  **Decalogo**: Un sistema di guida educativa che fornisce 10 pilastri fondamentali della sostenibilità.
 
 ## Analisi dell'Impatto
-Il valore aggiunto di EcoTrack risiede nella **rendicontazione trasparente**. Convertendo le azioni in "kg di CO2 risparmiato", l'utente percepisce direttamente il valore del proprio cambiamento, superando la barriera dell'astrazione climatica.
+Il valore aggiunto di Piantala! risiede nella **rendicontazione trasparente**. Convertendo le azioni in "kg di CO2 risparmiato", l'utente percepisce direttamente il valore del proprio cambiamento, superando la barriera dell'astrazione climatica.
 
 ## Potenziale di Crescita
 La struttura attuale è solida sul piano individuale. Il prossimo passo evolutivo deve mirare al **coinvolgimento territoriale e comunitario**, trasformando l'utente solitario in un membro attivo di un quartiere o di una città sostenibile.

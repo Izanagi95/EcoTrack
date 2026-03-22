@@ -20,19 +20,19 @@ export default function Navigation() {
   return (
     <nav className={styles.navContainer}>
       <div className={styles.brandArea}>
-        <div className={styles.logo}>🌱</div>
-        <span className={styles.appName}>EcoTrack</span>
+        <img src="/images/brand.png" alt="Piantala! Logo" className={styles.brandLogo} />
+        <span className={styles.appName}>Piantala!</span>
       </div>
-      
+
       <div className={styles.navMenu}>
         {navItems.map((item) => {
           const isActive = pathname === item.path;
           // Hide Decalogo on mobile bottom bar to keep it 5 items
           const isMobileHidden = item.name === 'Decalogo';
-          
+
           return (
-            <Link 
-              key={item.name} 
+            <Link
+              key={item.name}
               href={item.path}
               className={`${styles.navItem} ${isActive ? styles.active : ''} ${isMobileHidden ? styles.mobileHidden : ''}`}
             >

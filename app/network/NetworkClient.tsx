@@ -21,7 +21,7 @@ export default function NetworkClient() {
           🤝 Il nostro Network Locale
         </h1>
         <p className={styles.subtitle}>
-          In EcoTrack collaboriamo con le eccellenze del panorama ambientale per portare un impatto reale e misurabile. 
+          In Piantala! collaboriamo con le eccellenze del panorama ambientale per portare un impatto reale e misurabile. 
           Unisciti alle loro iniziative per guadagnare EcoScore aggiuntivo!
         </p>
       </header>

@@ -14,7 +14,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     // On mount, read from localStorage (default: light)
-    const saved = localStorage.getItem('ecotrack-theme') as Theme | null;
+    const saved = localStorage.getItem('piantala-theme') as Theme | null;
     const initial = saved === 'dark' ? 'dark' : 'light';
     setTheme(initial);
     if (initial === 'dark') {
@@ -27,7 +27,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const toggle = () => {
     setTheme(prev => {
       const next = prev === 'light' ? 'dark' : 'light';
-      localStorage.setItem('ecotrack-theme', next);
+      localStorage.setItem('piantala-theme', next);
       if (next === 'dark') {
         document.documentElement.classList.add('dark');
       } else {

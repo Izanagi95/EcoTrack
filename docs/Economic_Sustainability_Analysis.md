@@ -1,14 +1,14 @@
 # Sostenibilità Economica e Partnership: Eco-Neighborhood
 
 ## Modello di Business (Revenue Streams)
-Il progetto EcoTrack può autosostenersi attraverso tre canali principali:
+Il progetto Piantala! può autosostenersi attraverso tre canali principali:
 
 1.  **B2G (Business-to-Government)**: Fornitura di dashboard analitiche ai Comuni. I dati (anonimizzati) sui consumi e sul riciclo per quartiere aiutano gli enti a ottimizzare la raccolta rifiuti e le campagne energetiche.
 2.  **Affiliate & Lead Gen**: Commissioni derivanti dal suggerimento di prodotti green (es. kit risparmio idrico, fornitori energia 100% rinnovabile) basati sulle abitudini dell'utente analizzate dall'IA.
 3.  **Sponsorship & Branding**: Brand eco-friendly possono sponsorizzare "Sfide di Quartiere" specifiche, fornendo premi fisici o sconti digitali.
 
 ## Possibili Partnership Strategiche
-| Partner | Ruolo | Valore per EcoTrack |
+| Partner | Ruolo | Valore per Piantala! |
 | :--- | :--- | :--- |
 | **Municipalità (Comuni)** | Partner Istituzionale | Accesso a database locali, validazione Eco-Points. |
 | **Multi-utility (Energia/Acqua)** | Partner Tecnico | Integrazione API bollette, sconti esclusivi per utenti top. |
@@ -29,7 +29,7 @@ Il progetto EcoTrack può autosostenersi attraverso tre canali principali:
 
 ```mermaid
 graph TD
-    User[Utente EcoTrack] -->|Azioni Sostenibili| App[Piattaforma EcoTrack]
+    User[Utente Piantala!] -->|Azioni Sostenibili| App[Piattaforma Piantala!]
     App -->|Dati Analitici| Gov[Comune/Enti Locali]
     Gov -->|Finanziamenti/Licenze| App
     
